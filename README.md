@@ -21,31 +21,71 @@ O **Site Express 48H** é uma solução desenvolvida para profissionais, pequena
 
 ---
 
-## 🛠️ Stack Tecnológica
+## 🛠️ Stack Tecnológica & Arquitetura
 
-| Tecnologia | Uso / Função |
-| :--- | :--- |
-| **HTML5** | Estruturação semântica e acessibilidade |
-| **Tailwind CSS (CDN)** | Sistema de design e utilitários modernos |
-| **Vanilla JavaScript** | Lógica de interatividade e roteamento suave de âncoras |
-| **Google Fonts** | Tipografia (Inter & Poppins) |
-| **GitHub Pages** | Hospedagem estática com suporte a domínio customizado (`CNAME`) |
+| Camada | Tecnologia / Ferramenta | Função |
+| :--- | :--- | :--- |
+| **Markup & Semântica** | **HTML5** | Estrutura semântica e acessibilidade |
+| **Estilização** | **Tailwind CSS v3 (CLI)** | Build nativo compilado e minificado em `css/styles.css` |
+| **Lógica & Tipagem** | **TypeScript (ES2022)** | Código modularizado em `src/` e empacotado em `js/app.js` |
+| **Bundler & Build** | **esbuild** | Empacotamento instantâneo com geração de sourcemaps |
+| **Hospedagem & Deploy** | **GitHub Pages** | Servidor estático com domínio customizado (`CNAME`) |
 
 ---
 
-## 💻 Como Executar Localmente
+## 📁 Árvore de Arquivos Limpa e Modular
 
-Como a aplicação é estática, você não precisa de passos complexos de instalação.
+```text
+site-express/
+├── .geminiignore          # Regras de FinOps e exclusões de IA
+├── .gitignore             # Arquivos ignorados pelo Git
+├── CNAME                  # Domínio customizado para GitHub Pages
+├── LICENSE                # Licença restritiva CC BY-NC-ND 4.0
+├── README.md              # Documentação completa do projeto
+├── CHANGELOG.md           # Histórico de alterações (SemVer)
+├── package.json           # Scripts de automação (build, watch, typecheck)
+├── tsconfig.json          # Configuração do TypeScript estrito
+├── tailwind.config.js     # Design tokens (cores brand, sombras, tipografia)
+│
+├── index.html             # Arquivo HTML principal limpo
+│
+├── src/                   # Código-fonte tipado e modular
+│   ├── input.css          # Ponto de entrada CSS com diretivas Tailwind
+│   ├── types.ts           # Interfaces e tipos TypeScript
+│   ├── templates.ts       # Templates HTML dinâmicos dos Demos
+│   ├── countdown.ts       # Gestor de contagem regressiva (7d 12h) e popup recorrente
+│   └── main.ts            # Ponto de entrada da aplicação TypeScript
+│
+├── css/                   # Bundles compilados para produção
+│   └── styles.css         # CSS minificado gerado pelo Tailwind CLI
+│
+└── js/                    # Bundles compilados para produção
+    ├── app.js             # JavaScript empacotado e minificado
+    └── app.js.map         # Sourcemap para debugging
+```
 
-### Opção 1: Live Server (VS Code / Antigravity)
-- Abra o arquivo [index.html](file:///d:/ZEDECKLAB/WaysPessoais/landpages/site-express/index.html) no editor.
-- Inicie a extensão **Live Server** (Porta padrão recomendada pela regra global de landpages: `7000` - `7006`).
+---
 
-### Opção 2: Servidor HTTP Simples (Python)
+## 💻 Como Executar & Compilar Localmente
+
+### Opção 1: Visualização Imediata (Live Server / Python)
 ```bash
 python -m http.server 7000
 ```
 Acesse no navegador: `http://localhost:7000`
+
+### Opção 2: Scripts de Desenvolvimento & Build
+```bash
+# Compilar tudo para produção (CSS + JS):
+npm run build
+
+# Validação estrita de tipos TypeScript:
+npm run typecheck
+
+# Modo Watch durante o desenvolvimento:
+npm run watch:css
+npm run watch:js
+```
 
 ---
 

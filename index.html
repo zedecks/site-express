@@ -22,68 +22,60 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              blue: '#2563EB',
-              blueHover: '#1D4ED8',
-              dark: '#0F172A',
-              darker: '#080D1A',
-              light: '#F8FAFC',
-              slate: '#F1F5F9',
-              green: '#25D366',
-              greenHover: '#20BA5A'
-            }
-          },
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            display: ['Poppins', 'sans-serif']
-          },
-          boxShadow: {
-            'subtle': '0 4px 20px -2px rgba(15, 23, 42, 0.06)',
-            'card-hover': '0 12px 28px -4px rgba(37, 99, 235, 0.12)',
-            'glow-blue': '0 0 30px -5px rgba(37, 99, 235, 0.35)',
-            'glow-green': '0 0 25px -3px rgba(37, 211, 102, 0.45)'
-          }
-        }
-      }
-    }
-  </script>
-
-  <style>
-    /* Smooth transitions and custom scrollbar */
-    * {
-      -webkit-tap-highlight-color: transparent;
-    }
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #0F172A;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #2563EB;
-      border-radius: 4px;
-    }
-    /* Pulsing badge animation */
-    @keyframes pulse-subtle {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.85; transform: scale(1.03); }
-    }
-    .animate-pulse-subtle {
-      animation: pulse-subtle 3s infinite ease-in-out;
-    }
-  </style>
+  <!-- Production Compiled Tailwind CSS -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-brand-light font-sans text-brand-dark antialiased selection:bg-brand-blue selection:text-white">
 
+  <!-- Urgency Countdown Banner (7 Days and 12 Hours) -->
+  <aside id="countdown-banner" aria-label="Campanha de Lançamento" class="bg-gradient-to-r from-brand-darker via-brand-dark to-slate-900 text-white py-2.5 px-4 text-xs sticky top-0 z-50 border-b border-blue-500/30 transition-colors duration-500">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      
+      <!-- Promo Info -->
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-blue-500/20 text-brand-blue animate-pulse">🔥</span>
+        <span id="countdown-label" class="font-semibold text-slate-200">
+          Oferta Especial de Lançamento: <strong class="text-white font-bold">Site Profissional por 4.000 MT</strong>
+        </span>
+      </div>
+
+      <!-- Live Countdown Clock -->
+      <div class="flex items-center gap-3">
+        <div class="flex items-center gap-1.5 font-mono text-xs">
+          <div class="bg-slate-800/90 border border-slate-700/80 px-2 py-0.5 rounded text-center min-w-[34px]">
+            <span id="cd-days" class="font-bold text-amber-400 text-sm">07</span>
+            <span class="block text-[8px] text-slate-400 -mt-0.5">DIAS</span>
+          </div>
+          <span class="text-slate-500 font-bold">:</span>
+          <div class="bg-slate-800/90 border border-slate-700/80 px-2 py-0.5 rounded text-center min-w-[34px]">
+            <span id="cd-hours" class="font-bold text-amber-400 text-sm">12</span>
+            <span class="block text-[8px] text-slate-400 -mt-0.5">HRS</span>
+          </div>
+          <span class="text-slate-500 font-bold">:</span>
+          <div class="bg-slate-800/90 border border-slate-700/80 px-2 py-0.5 rounded text-center min-w-[34px]">
+            <span id="cd-minutes" class="font-bold text-slate-200 text-sm">00</span>
+            <span class="block text-[8px] text-slate-400 -mt-0.5">MIN</span>
+          </div>
+          <span class="text-slate-500 font-bold">:</span>
+          <div class="bg-slate-800/90 border border-slate-700/80 px-2 py-0.5 rounded text-center min-w-[34px]">
+            <span id="cd-seconds" class="font-bold text-brand-blue text-sm">00</span>
+            <span class="block text-[8px] text-slate-400 -mt-0.5">SEG</span>
+          </div>
+        </div>
+
+        <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20aproveitar%20a%20oferta%20de%20lan%C3%A7amento%20de%204.000%20MT%20do%20Site%20Express%2048H." 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="bg-brand-blue hover:bg-brand-blueHover text-white font-bold px-3 py-1 rounded-lg text-xs transition-colors shadow-sm hidden md:inline-block">
+          Garantir 4.000 MT
+        </a>
+      </div>
+
+    </div>
+  </aside>
+
   <!-- Top Navigation Header -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all duration-200">
+  <header class="sticky top-[41px] z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all duration-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-18 py-3">
         
@@ -1259,373 +1251,57 @@
     </div>
   </div>
 
-  <!-- JavaScript Handlers -->
-  <script>
-    // 1. Mobile Menu Toggler
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const hamburgerIcon = document.getElementById('hamburger-icon');
-    const closeIcon = document.getElementById('close-icon');
-    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
-
-    mobileMenuBtn.addEventListener('click', () => {
-      const isExpanded = mobileMenu.classList.toggle('hidden');
-      hamburgerIcon.classList.toggle('hidden');
-      closeIcon.classList.toggle('hidden');
-    });
-
-    mobileLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        hamburgerIcon.classList.remove('hidden');
-        closeIcon.classList.add('hidden');
-      });
-    });
-
-    // 2. FAQ Accordion Logic
-    const faqToggles = document.querySelectorAll('.faq-toggle');
-    faqToggles.forEach(toggle => {
-      toggle.addEventListener('click', () => {
-        const content = toggle.nextElementSibling;
-        const icon = toggle.querySelector('.faq-icon');
-        const isHidden = content.classList.contains('hidden');
-
-        // Close all first for clean accordion UX
-        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
-        document.querySelectorAll('.faq-icon').forEach(i => i.textContent = '+');
-        document.querySelectorAll('.faq-toggle').forEach(t => t.setAttribute('aria-expanded', 'false'));
-
-        if (isHidden) {
-          content.classList.remove('hidden');
-          icon.textContent = '−';
-          toggle.setAttribute('aria-expanded', 'true');
-        }
-      });
-    });
-
-    // 3. Dynamic Fullscreen Demo Templates
-    const demoModal = document.getElementById('demo-modal');
-    const demoModalTitle = document.getElementById('demo-modal-title');
-    const demoModalCta = document.getElementById('demo-modal-cta');
-    const demoContentContainer = document.getElementById('demo-content-container');
-
-    const demoTemplates = {
-      // DEMO 01: FOOD
-      food: {
-        title: 'Demo 01 — FOOD (Restaurantes e Takeaways)',
-        ctaUrl: 'https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Food.',
-        html: `
-          <div class="bg-amber-50/40 text-slate-800 min-h-full font-sans">
-            <!-- Demo Header -->
-            <div class="bg-slate-900 text-white py-4 px-6 sticky top-0 z-30 flex items-center justify-between border-b border-slate-800 shadow-md">
-              <div class="flex items-center gap-2">
-                <span class="text-2xl">🍔</span>
-                <span class="font-display font-extrabold text-lg text-amber-400">Sabores Express</span>
-              </div>
-              <div class="text-xs font-semibold text-slate-300 hidden sm:block">Entrega rápida em Maputo e Matola</div>
-              <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Food." target="_blank" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-3 py-1.5 rounded-lg text-xs">
-                Pedir no WhatsApp
-              </a>
-            </div>
-
-            <!-- Demo Hero -->
-            <div class="bg-gradient-to-b from-slate-900 to-slate-800 text-white py-14 px-6 text-center">
-              <span class="bg-amber-500/20 text-amber-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Demo Fictício • Gastronomia</span>
-              <h1 class="font-display font-extrabold text-3xl sm:text-5xl mt-4 mb-3 text-white">Sabor que chega até você.</h1>
-              <p class="text-slate-300 max-w-xl mx-auto text-sm sm:text-base mb-6">Descubra nosso menu, faça seu pedido e receba onde estiver com toda a comodidade.</p>
-              <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Food." target="_blank" class="inline-flex items-center gap-2 bg-amber-500 text-slate-950 px-6 py-3 rounded-xl font-bold text-sm shadow-md">
-                <span>FAZER PEDIDO PELO WHATSAPP</span>
-              </a>
-            </div>
-
-            <!-- Demo Menu Section -->
-            <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6">
-              <div class="text-center mb-8">
-                <h2 class="font-display font-extrabold text-2xl text-slate-900">Destaques do Nosso Menu</h2>
-                <p class="text-xs text-slate-500">Exemplo demonstrativo de pratos e preços</p>
-              </div>
-
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                <!-- Food Item 1 -->
-                <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm flex flex-col justify-between">
-                  <div>
-                    <div class="w-full h-32 bg-amber-100 rounded-xl flex items-center justify-center text-4xl mb-3">🍔</div>
-                    <h3 class="font-bold text-slate-900 text-base">Hambúrguer Clássico</h3>
-                    <p class="text-xs text-slate-500 mt-1">Hambúrguer artesanal, queijo cheddar, alface crocante e molho especial.</p>
-                  </div>
-                  <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <span class="font-extrabold text-amber-600 text-lg">450 MT</span>
-                    <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20pedir%20o%20Hamb%C3%BArguer%20Cl%C3%A1ssico%20do%20demo%20Food." target="_blank" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold px-3 py-1.5 rounded-lg">Pedir</a>
-                  </div>
-                </div>
-
-                <!-- Food Item 2 -->
-                <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm flex flex-col justify-between">
-                  <div>
-                    <div class="w-full h-32 bg-orange-100 rounded-xl flex items-center justify-center text-4xl mb-3">🍕</div>
-                    <h3 class="font-bold text-slate-900 text-base">Pizza Especial</h3>
-                    <p class="text-xs text-slate-500 mt-1">Molho artesanal, mozzarella, pepperoni crocante e azeitonas pretas.</p>
-                  </div>
-                  <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <span class="font-extrabold text-amber-600 text-lg">650 MT</span>
-                    <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20pedir%20a%20Pizza%20Especial%20do%20demo%20Food." target="_blank" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold px-3 py-1.5 rounded-lg">Pedir</a>
-                  </div>
-                </div>
-
-                <!-- Food Item 3 -->
-                <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm flex flex-col justify-between">
-                  <div>
-                    <div class="w-full h-32 bg-yellow-100 rounded-xl flex items-center justify-center text-4xl mb-3">🍗</div>
-                    <h3 class="font-bold text-slate-900 text-base">Frango Grelhado</h3>
-                    <p class="text-xs text-slate-500 mt-1">Grelhado na brasa ao piripiri suave, acompanhado de batatas douradas.</p>
-                  </div>
-                  <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <span class="font-extrabold text-amber-600 text-lg">550 MT</span>
-                    <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20pedir%20o%20Frango%20Grelhado%20do%20demo%20Food." target="_blank" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold px-3 py-1.5 rounded-lg">Pedir</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- About & Info in Demo -->
-              <div class="mt-12 bg-white rounded-2xl p-6 border border-slate-200">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                  <div>
-                    <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Sobre Nosso Restaurante</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed mb-4">Ingredientes frescos selecionados todos os dias para garantir o melhor sabor na sua mesa ou no conforto da sua casa.</p>
-                    <div class="text-xs text-slate-500 space-y-1">
-                      <div>📍 <strong>Localização:</strong> Av. Julius Nyerere, Polana, Maputo</div>
-                      <div>🕒 <strong>Horário:</strong> Terça a Domingo, das 11h às 22h</div>
-                    </div>
-                  </div>
-                  <div class="bg-amber-100/60 rounded-xl p-4 text-center">
-                    <span class="font-bold text-amber-900 text-sm block mb-1">Quer um site de comida assim?</span>
-                    <p class="text-xs text-amber-800 mb-3">Entregamos com suas fotos reais e o seu cardápio em 48 horas.</p>
-                    <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Food." target="_blank" class="inline-block bg-brand-green text-white font-bold text-xs py-2 px-4 rounded-lg">
-                      Falar com a Zedeck's IT
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        `
-      },
-
-      // DEMO 02: BUSINESS
-      business: {
-        title: 'Demo 02 — BUSINESS (Serviços e Profissionais)',
-        ctaUrl: 'https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Business.',
-        html: `
-          <div class="bg-slate-50 text-slate-800 min-h-full font-sans">
-            <!-- Demo Header -->
-            <div class="bg-white py-4 px-6 sticky top-0 z-30 flex items-center justify-between border-b border-slate-200 shadow-sm">
-              <div class="flex items-center gap-2">
-                <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold">A</div>
-                <span class="font-display font-extrabold text-lg text-slate-900">Apex Soluções</span>
-              </div>
-              <div class="text-xs font-semibold text-slate-500 hidden sm:block">Consultoria Empresarial & Tecnologia</div>
-              <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Business." target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-3 py-1.5 rounded-lg text-xs">
-                Pedir Proposta
-              </a>
-            </div>
-
-            <!-- Demo Hero -->
-            <div class="bg-gradient-to-r from-slate-900 to-blue-950 text-white py-16 px-6 text-center">
-              <span class="bg-blue-500/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Demo Fictício • Serviços B2B</span>
-              <h1 class="font-display font-extrabold text-3xl sm:text-5xl mt-4 mb-3 text-white">O seu serviço. A um clique de distância.</h1>
-              <p class="text-slate-300 max-w-xl mx-auto text-sm sm:text-base mb-6">Apresente o seu trabalho, conquiste novos clientes e facilite os contactos corporativos.</p>
-              <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Business." target="_blank" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-bold text-sm shadow-md">
-                <span>FALAR NO WHATSAPP</span>
-              </a>
-            </div>
-
-            <!-- Demo Services Grid -->
-            <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6">
-              <div class="text-center mb-8">
-                <h2 class="font-display font-extrabold text-2xl text-slate-900">Nossos Serviços Especializados</h2>
-                <p class="text-xs text-slate-500">Exemplo demonstrativo de competências empresariais</p>
-              </div>
-
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <!-- Service 1 -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                  <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold mb-3">01</div>
-                  <h3 class="font-bold text-slate-900 text-base mb-1">Consultoria Estratégica</h3>
-                  <p class="text-xs text-slate-600 leading-relaxed mb-4">Diagnóstico de processos, planejamento financeiro e reestruturação para empresas em crescimento.</p>
-                  <span class="text-xs font-semibold text-blue-600">Sob consulta • Contactar</span>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                  <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold mb-3">02</div>
-                  <h3 class="font-bold text-slate-900 text-base mb-1">Desenvolvimento de Sistemas</h3>
-                  <p class="text-xs text-slate-600 leading-relaxed mb-4">Criação de soluções digitais personalizadas, automatização e integrações tecnológicas sob medida.</p>
-                  <span class="text-xs font-semibold text-blue-600">Sob consulta • Contactar</span>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                  <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold mb-3">03</div>
-                  <h3 class="font-bold text-slate-900 text-base mb-1">Marketing e Posicionamento</h3>
-                  <p class="text-xs text-slate-600 leading-relaxed mb-4">Gestão de presença nas redes sociais, anúncios patrocinados e comunicação visual corporativa.</p>
-                  <span class="text-xs font-semibold text-blue-600">Sob consulta • Contactar</span>
-                </div>
-
-                <!-- Service 4 -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                  <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold mb-3">04</div>
-                  <h3 class="font-bold text-slate-900 text-base mb-1">Suporte Técnico Contínuo</h3>
-                  <p class="text-xs text-slate-600 leading-relaxed mb-4">Manutenção de redes informáticas, segurança da informação e assistência aos colaboradores.</p>
-                  <span class="text-xs font-semibold text-blue-600">Sob consulta • Contactar</span>
-                </div>
-              </div>
-
-              <!-- Contact & Location Box -->
-              <div class="mt-8 bg-white rounded-2xl p-6 border border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-4">
-                <div>
-                  <div class="font-bold text-slate-900 text-sm">Escritório Central</div>
-                  <div class="text-xs text-slate-500">Av. 24 de Julho, Edifício Platinum, Maputo</div>
-                </div>
-                <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Business." target="_blank" class="bg-brand-green text-white font-bold text-xs py-2.5 px-4 rounded-xl">
-                  Conversar com Especialista
-                </a>
-              </div>
-
-            </div>
-          </div>
-        `
-      },
-
-      // DEMO 03: STORE
-      store: {
-        title: 'Demo 03 — STORE (Lojas e Produtos)',
-        ctaUrl: 'https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Store.',
-        html: `
-          <div class="bg-slate-100 text-slate-800 min-h-full font-sans">
-            <!-- Demo Header -->
-            <div class="bg-white py-4 px-6 sticky top-0 z-30 flex items-center justify-between border-b border-slate-200 shadow-sm">
-              <div class="flex items-center gap-2">
-                <span class="text-2xl">🛍️</span>
-                <span class="font-display font-extrabold text-lg text-slate-900">Moda & Tech</span>
-              </div>
-              <div class="text-xs font-semibold text-slate-500 hidden sm:block">Entregas em todo o território nacional</div>
-              <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Store." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3 py-1.5 rounded-lg text-xs">
-                Catálogo WhatsApp
-              </a>
-            </div>
-
-            <!-- Demo Hero -->
-            <div class="bg-gradient-to-r from-emerald-900 to-slate-900 text-white py-14 px-6 text-center">
-              <span class="bg-emerald-500/20 text-emerald-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Demo Fictício • Loja Online Express</span>
-              <h1 class="font-display font-extrabold text-3xl sm:text-5xl mt-4 mb-3 text-white">Tudo o que procura, num só lugar.</h1>
-              <p class="text-slate-300 max-w-xl mx-auto text-sm sm:text-base mb-6">Apresente seus produtos e transforme visitantes em clientes directos no seu WhatsApp.</p>
-              <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Store." target="_blank" class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-6 py-3 rounded-xl font-bold text-sm shadow-md">
-                <span>VER COLEÇÃO COMPLETA</span>
-              </a>
-            </div>
-
-            <!-- Demo Product Grid -->
-            <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6">
-              <div class="text-center mb-8">
-                <h2 class="font-display font-extrabold text-2xl text-slate-900">Produtos em Destaque</h2>
-                <p class="text-xs text-slate-500">Exemplos demonstrativos de itens à venda</p>
-              </div>
-
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                
-                <!-- Product 1 -->
-                <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between">
-                  <div>
-                    <div class="w-full h-36 bg-slate-100 rounded-xl flex items-center justify-center text-4xl mb-3">⌚</div>
-                    <div class="text-[10px] text-emerald-600 font-bold uppercase">Disponível</div>
-                    <h3 class="font-bold text-slate-900 text-sm">Smart Watch</h3>
-                  </div>
-                  <div class="mt-3 pt-2 border-t border-slate-100">
-                    <div class="font-extrabold text-slate-900 text-base mb-2">2.500 MT</div>
-                    <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20comprar%20o%20Smart%20Watch%20por%202.500%20MT." target="_blank" class="w-full block text-center bg-brand-green hover:bg-brand-greenHover text-white text-xs font-bold py-2 rounded-lg">
-                      Comprar
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Product 2 -->
-                <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between">
-                  <div>
-                    <div class="w-full h-36 bg-slate-100 rounded-xl flex items-center justify-center text-4xl mb-3">🎧</div>
-                    <div class="text-[10px] text-emerald-600 font-bold uppercase">Disponível</div>
-                    <h3 class="font-bold text-slate-900 text-sm">Headphones Bluetooth</h3>
-                  </div>
-                  <div class="mt-3 pt-2 border-t border-slate-100">
-                    <div class="font-extrabold text-slate-900 text-base mb-2">1.800 MT</div>
-                    <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20comprar%20o%20Headphone%20por%201.800%20MT." target="_blank" class="w-full block text-center bg-brand-green hover:bg-brand-greenHover text-white text-xs font-bold py-2 rounded-lg">
-                      Comprar
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between">
-                  <div>
-                    <div class="w-full h-36 bg-slate-100 rounded-xl flex items-center justify-center text-4xl mb-3">👟</div>
-                    <div class="text-[10px] text-emerald-600 font-bold uppercase">Disponível</div>
-                    <h3 class="font-bold text-slate-900 text-sm">Tênis Esportivo</h3>
-                  </div>
-                  <div class="mt-3 pt-2 border-t border-slate-100">
-                    <div class="font-extrabold text-slate-900 text-base mb-2">3.000 MT</div>
-                    <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20comprar%20o%20T%C3%AAnis%20por%203.000%20MT." target="_blank" class="w-full block text-center bg-brand-green hover:bg-brand-greenHover text-white text-xs font-bold py-2 rounded-lg">
-                      Comprar
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Product 4 -->
-                <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between">
-                  <div>
-                    <div class="w-full h-36 bg-slate-100 rounded-xl flex items-center justify-center text-4xl mb-3">🎒</div>
-                    <div class="text-[10px] text-emerald-600 font-bold uppercase">Disponível</div>
-                    <h3 class="font-bold text-slate-900 text-sm">Mochila Urbana</h3>
-                  </div>
-                  <div class="mt-3 pt-2 border-t border-slate-100">
-                    <div class="font-extrabold text-slate-900 text-base mb-2">1.500 MT</div>
-                    <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20comprar%20a%20Mochila%20por%201.500%20MT." target="_blank" class="w-full block text-center bg-brand-green hover:bg-brand-greenHover text-white text-xs font-bold py-2 rounded-lg">
-                      Comprar
-                    </a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        `
-      }
-    };
-
-    function openDemoModal(type) {
-      const template = demoTemplates[type];
-      if (!template) return;
-
-      demoModalTitle.textContent = template.title;
-      demoModalCta.href = template.ctaUrl;
-      demoContentContainer.innerHTML = template.html;
+  <!-- Expired Offer Modal (Sad SVG Animation & Recurring Trigger) -->
+  <div id="expired-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4 transition-all duration-300">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 text-center shadow-2xl border border-slate-100 transform transition-all animate-bounce-short">
       
-      demoModal.classList.remove('hidden');
-      demoModal.classList.add('flex');
-      document.body.classList.add('overflow-hidden');
-    }
+      <!-- Sad Animated SVG Character -->
+      <div class="w-24 h-24 mx-auto mb-5 bg-rose-50 rounded-full flex items-center justify-center text-rose-500 shadow-inner">
+        <svg class="w-16 h-16 animate-pulse" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Face Outline -->
+          <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="3" fill="#FFF1F2"/>
+          <!-- Sad Eyebrows -->
+          <path d="M20 22L28 25M44 22L36 25" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Sad Eyes -->
+          <circle cx="23" cy="28" r="3" fill="currentColor"/>
+          <circle cx="41" cy="28" r="3" fill="currentColor"/>
+          <!-- Tear Droplet Falling -->
+          <path d="M43 33C43 35.5 41 37.5 39 37.5C37 37.5 35 35.5 37 33C38.5 30.5 39 28 39 28C39 28 39.5 30.5 41 33C42 34 43 34.5 43 33Z" fill="#38BDF8" class="animate-bounce"/>
+          <!-- Sad Mouth Arc -->
+          <path d="M22 44C26 38 38 38 42 44" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
 
-    function closeDemoModal() {
-      demoModal.classList.add('hidden');
-      demoModal.classList.remove('flex');
-      document.body.classList.remove('overflow-hidden');
-    }
+      <!-- Expired Notice Title & Copy -->
+      <span class="inline-block bg-rose-100 text-rose-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
+        Campanha Encerrada
+      </span>
+      <h3 class="font-display font-extrabold text-2xl text-slate-900 mb-2">
+        Oferta de Lançamento Expirada!
+      </h3>
+      <p class="text-sm text-slate-600 leading-relaxed mb-6">
+        O prazo promocional de <strong>4.000 MT</strong> para o Site Express 48H atingiu o limite de 7 dias e 12 horas. Contacte a nossa equipa para verificar vagas remanescentes ou orçamento padrão.
+      </p>
 
-    // Close modal on Escape key
-    window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !demoModal.classList.contains('hidden')) {
-        closeDemoModal();
-      }
-    });
-  </script>
+      <!-- Action Buttons -->
+      <div class="flex flex-col gap-3">
+        <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Vi%20que%20a%20oferta%20de%20lan%C3%A7amento%20expirou,%20mas%20gostaria%20de%20saber%20se%20ainda%20consigo%20fazer%20o%20meu%20site." 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="w-full inline-flex items-center justify-center gap-2 bg-brand-green hover:bg-brand-greenHover text-white py-3 px-4 rounded-xl font-bold text-sm shadow-md transition-all">
+          <span>Consultar Vagas no WhatsApp</span>
+        </a>
+
+        <button id="close-expired-modal-btn" 
+                class="w-full text-slate-500 hover:text-slate-800 text-xs font-semibold py-2 transition-colors">
+          Continuar navegando no site
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Compiled TypeScript Application Bundle -->
+  <script src="js/app.js"></script>
 </body>
 </html>
