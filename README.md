@@ -96,8 +96,13 @@ site-express/
 
 ---
 
-## 📄 Licença
+## 📄 Licença e Direitos de Uso
 
-Este projeto é software livre e está licenciado sob os termos da **[GNU General Public License v3.0 (GPL-3.0)](LICENSE)**.
+Este projeto está protegido sob os termos da licença **[Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)](LICENSE)**.
 
-Desenvolvido por **Edmilson Muacigarro** ([iradoweck](https://github.com/iradoweck)).
+### ⚠️ Termos e Restrições:
+- **Atribuição Obrigatória (BY):** É estritamente obrigatório conceder os devidos créditos a **Edmilson Muacigarro ([iradoweck](https://github.com/iradoweck))** e referenciar este repositório.
+- **Uso Não Comercial (NC):** É terminantemente **proibido o uso comercial**, incluindo a venda, revenda deste código, cobrança de clientes por este modelo ou utilização para fins de lucro sem autorização expressa.
+- **Sem Derivações (ND):** É proibida a redistribuição pública de versões modificadas ou derivadas deste projeto.
+
+Desenvolvido por **Edmilson Muacigarro** ([iradoweck](https://github.com/iradoweck)). Todos os direitos morais e patrimoniais reservados.

@@ -12,7 +12,7 @@ O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.
 - 🚀 Landing page completa do **Site Express 48H** com foco em conversão e integração direta com WhatsApp.
 - 🌐 Arquivo `CNAME` configurado para o domínio customizado `siteexpress.edmilsonmuacigarro.com`.
 - 📖 Documentação abrangente no `README.md` incluindo stack, execução local e guia passo a passo de deploy no GitHub Pages.
-- 📜 Licença de software livre **GNU General Public License v3.0 (GPL-3.0)** no arquivo `LICENSE`.
+- 📜 Licença pública restritiva **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)** no arquivo `LICENSE` (com atribuição obrigatória e proibição total de comercialização/derivações).
 - 🏷️ Configuração de metadados do GitHub (`About`, `Homepage` e `Topics`).
 - 🛡️ Arquivos `.gitignore` e `.geminiignore` para governança, segurança e otimização de contexto/FinOps.
 
