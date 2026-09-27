@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="pt" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Express 48H | Landing Pages Profissionais por 4.000 MT</title>
+  
+  <!-- SEO & Open Graph Meta Tags -->
+  <meta name="description" content="Crie o site do seu negócio em até 48 horas. Landing pages profissionais, responsivas e com WhatsApp integrado por apenas 4.000 MT.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Site Express 48H — Seu negócio online em 48 horas">
+  <meta property="og:description" content="Landing pages profissionais por 4.000 MT. Rápido, moderno e focado em vendas pelo WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://siteexpress.edmilsonmuacigarro.com">
+  <meta name="theme-color" content="#2563EB">
+
+  <!-- Favicon SVG Data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232563EB'/><path d='M52 20L30 52h18L44 80l26-34H52z' fill='%23FFFFFF'/></svg>">
+
+  <!-- Google Fonts: Inter & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#2563EB',
+              blueHover: '#1D4ED8',
+              dark: '#0F172A',
+              darker: '#080D1A',
+              light: '#F8FAFC',
+              slate: '#F1F5F9',
+              green: '#25D366',
+              greenHover: '#20BA5A'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Poppins', 'sans-serif']
+          },
+          boxShadow: {
+            'subtle': '0 4px 20px -2px rgba(15, 23, 42, 0.06)',
+            'card-hover': '0 12px 28px -4px rgba(37, 99, 235, 0.12)',
+            'glow-blue': '0 0 30px -5px rgba(37, 99, 235, 0.35)',
+            'glow-green': '0 0 25px -3px rgba(37, 211, 102, 0.45)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Smooth transitions and custom scrollbar */
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0F172A;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2563EB;
+      border-radius: 4px;
+    }
+    /* Pulsing badge animation */
+    @keyframes pulse-subtle {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.85; transform: scale(1.03); }
+    }
+    .animate-pulse-subtle {
+      animation: pulse-subtle 3s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-brand-light font-sans text-brand-dark antialiased selection:bg-brand-blue selection:text-white">
+
+  <!-- Top Navigation Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-18 py-3">
+        
+        <!-- Logo -->
+        <a href="#hero" class="flex items-center gap-3 group focus:outline-none">
+          <div class="w-10 h-10 rounded-xl bg-brand-blue flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform duration-200">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="font-display font-bold text-lg leading-tight tracking-tight text-brand-dark flex items-center gap-1.5">
+              SITE EXPRESS <span class="text-brand-blue">48H</span>
+            </div>
+            <p class="text-[10px] uppercase font-semibold text-slate-400 tracking-wider">por Zedeck's IT</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+          <a href="#o-que-inclui" class="hover:text-brand-blue transition-colors">O que inclui</a>
+          <a href="#segmentos" class="hover:text-brand-blue transition-colors">Para quem é</a>
+          <a href="#demos" class="hover:text-brand-blue transition-colors">Demos</a>
+          <a href="#como-funciona" class="hover:text-brand-blue transition-colors">Como funciona</a>
+          <a href="#preco" class="hover:text-brand-blue transition-colors">Preço</a>
+          <a href="#faq" class="hover:text-brand-blue transition-colors">FAQ</a>
+        </nav>
+
+        <!-- Right Action Button -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Vi%20o%20Site%20Express%2048H%20e%20quero%20criar%20o%20meu%20site." 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-greenHover text-white px-4 py-2.5 rounded-xl font-semibold text-sm shadow-sm hover:shadow-glow-green transition-all duration-200">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M12.031 2C6.496 2 2 6.496 2 12.031c0 1.954.558 3.784 1.523 5.341L2.09 22.062l4.828-1.402A9.972 9.972 0 0012.03 22c5.535 0 10.031-4.496 10.031-10.031C22.062 6.496 17.566 2 12.031 2zm0 18.25c-1.637 0-3.167-.47-4.464-1.282l-.32-.199-2.868.834.847-2.775-.213-.338a8.214 8.214 0 01-1.267-4.459c0-4.568 3.714-8.281 8.285-8.281 4.57 0 8.283 3.713 8.283 8.281 0 4.57-3.713 8.289-8.283 8.289z"/>
+            </svg>
+            <span>87 770 3308</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex md:hidden">
+          <button id="mobile-menu-btn" 
+                  aria-label="Abrir menu de navegação"
+                  class="p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none transition-colors">
+            <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 bg-white px-4 pt-3 pb-6 space-y-2 shadow-xl">
+      <a href="#o-que-inclui" class="mobile-nav-link block py-2.5 px-3 rounded-lg text-slate-700 font-medium hover:bg-slate-50 hover:text-brand-blue">O que inclui</a>
+      <a href="#segmentos" class="mobile-nav-link block py-2.5 px-3 rounded-lg text-slate-700 font-medium hover:bg-slate-50 hover:text-brand-blue">Para quem é</a>
+      <a href="#demos" class="mobile-nav-link block py-2.5 px-3 rounded-lg text-slate-700 font-medium hover:bg-slate-50 hover:text-brand-blue">Demos Interativos</a>
+      <a href="#como-funciona" class="mobile-nav-link block py-2.5 px-3 rounded-lg text-slate-700 font-medium hover:bg-slate-50 hover:text-brand-blue">Como funciona</a>
+      <a href="#preco" class="mobile-nav-link block py-2.5 px-3 rounded-lg text-slate-700 font-medium hover:bg-slate-50 hover:text-brand-blue">Preço (4.000 MT)</a>
+      <a href="#faq" class="mobile-nav-link block py-2.5 px-3 rounded-lg text-slate-700 font-medium hover:bg-slate-50 hover:text-brand-blue">Perguntas Frequentes</a>
+      <div class="pt-2">
+        <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Vi%20o%20Site%20Express%2048H%20e%20quero%20criar%20o%20meu%20site." 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="flex items-center justify-center gap-2 w-full bg-brand-green hover:bg-brand-greenHover text-white py-3 rounded-xl font-semibold shadow-sm text-center">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 2C6.496 2 2 6.496 2 12.031c0 1.954.558 3.784 1.523 5.341L2.09 22.062l4.828-1.402A9.972 9.972 0 0012.03 22c5.535 0 10.031-4.496 10.031-10.031C22.062 6.496 17.566 2 12.031 2zm0 18.25c-1.637 0-3.167-.47-4.464-1.282l-.32-.199-2.868.834.847-2.775-.213-.338a8.214 8.214 0 01-1.267-4.459c0-4.568 3.714-8.281 8.285-8.281 4.57 0 8.283 3.713 8.283 8.281 0 4.57-3.713 8.289-8.283 8.289z"/>
+          </svg>
+          <span>Falar no WhatsApp (87 770 3308)</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative overflow-hidden pt-10 pb-16 md:pt-16 md:pb-24 bg-gradient-to-b from-white via-slate-50 to-brand-slate">
+    <!-- Subtle Background Glows -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-blue/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute top-10 right-10 w-72 h-72 bg-blue-300/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Copy & High-Impact CTAs -->
+        <div class="lg:col-span-7 text-center lg:text-left">
+          
+          <!-- Fast Delivery Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200/70 text-brand-blue font-semibold text-xs tracking-wide uppercase mb-6 animate-pulse-subtle">
+            <span class="text-base">⚡</span>
+            <span>ENTREGA EM ATÉ 48 HORAS</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-brand-dark tracking-tight leading-[1.15] mb-6">
+            Seu negócio online. <br class="hidden sm:inline">
+            <span class="text-brand-blue">Em 48 horas.</span>
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="text-base sm:text-lg md:text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed mb-8">
+            Criamos landing pages profissionais para empresas, lojas e profissionais que querem ter uma presença online sem esperar semanas.
+          </p>
+
+          <!-- Price Highlight Box -->
+          <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-subtle max-w-md mx-auto lg:mx-0 mb-8">
+            <div class="flex items-baseline justify-center lg:justify-start gap-2">
+              <span class="text-xs sm:text-sm font-semibold text-slate-500 uppercase tracking-wider">Apenas</span>
+              <span class="font-display text-4xl sm:text-5xl font-extrabold text-brand-blue tracking-tight">4.000 MT</span>
+              <span class="text-xs text-slate-500 font-medium">/ projeto completo</span>
+            </div>
+            <div class="mt-2.5 pt-2.5 border-t border-slate-100 flex items-center justify-center lg:justify-start gap-2 text-xs sm:text-sm font-medium text-slate-600">
+              <svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span><strong>50% para começar</strong> • <strong>50% na entrega</strong></span>
+            </div>
+          </div>
+
+          <!-- Primary CTAs -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-4">
+            <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Vi%20o%20Site%20Express%2048H%20e%20quero%20criar%20o%20meu%20site." 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="inline-flex items-center justify-center gap-3 bg-brand-blue hover:bg-brand-blueHover text-white px-8 py-4 rounded-xl font-bold text-base shadow-lg shadow-blue-500/25 hover:shadow-glow-blue transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 text-center">
+              <span>QUERO MEU SITE</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
+
+            <a href="#demos" 
+               class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-800 border border-slate-300 px-7 py-4 rounded-xl font-semibold text-base transition-all duration-200 text-center">
+              <svg class="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+              </svg>
+              <span>VER DEMOS</span>
+            </a>
+          </div>
+
+          <!-- Fast Features Micro Badges -->
+          <div class="mt-8 pt-6 border-t border-slate-200/60 flex flex-wrap items-center justify-center lg:justify-start gap-y-2 gap-x-4 text-xs font-medium text-slate-600">
+            <span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-500"></span>Sem mensalidades surpresa</span>
+            <span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-500"></span>Design focado em conversão</span>
+            <span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-500"></span>Suporte direto de Moçambique</span>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Smartphone Mockup & Indicators -->
+        <div class="lg:col-span-5 flex flex-col items-center">
+          <div class="relative w-full max-w-[320px] sm:max-w-[340px]">
+            
+            <!-- Large Floating 48H Badge -->
+            <div class="absolute -top-5 -left-5 z-20 bg-brand-dark text-white border-2 border-brand-blue px-4 py-2 rounded-2xl shadow-xl transform -rotate-6">
+              <span class="block text-2xl font-extrabold font-display leading-none text-brand-blue">48H</span>
+              <span class="text-[10px] tracking-widest uppercase font-semibold text-slate-300">Entrega</span>
+            </div>
+
+            <!-- Smartphone Frame -->
+            <div class="relative mx-auto rounded-[40px] p-3 bg-brand-dark border-4 border-slate-700 shadow-2xl">
+              <!-- Speaker & Camera Notch -->
+              <div class="w-28 h-4 bg-slate-800 rounded-full mx-auto mb-2 flex items-center justify-center gap-2">
+                <div class="w-2 h-2 bg-slate-900 rounded-full"></div>
+                <div class="w-6 h-1 bg-slate-700 rounded-full"></div>
+              </div>
+
+              <!-- Phone Screen Content -->
+              <div class="bg-white rounded-[32px] overflow-hidden border border-slate-100 text-xs">
+                
+                <!-- Mockup App Header -->
+                <div class="bg-brand-blue px-4 py-3 text-white flex items-center justify-between">
+                  <div class="flex items-center gap-1.5 font-bold tracking-tight text-[13px]">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full"></span>
+                    <span>Seu Negócio Express</span>
+                  </div>
+                  <span class="text-[10px] bg-blue-700/60 px-2 py-0.5 rounded-full font-medium">Online</span>
+                </div>
+
+                <!-- Mockup Hero Inside Phone -->
+                <div class="p-4 bg-slate-50 border-b border-slate-100 text-center">
+                  <div class="inline-block bg-blue-100 text-brand-blue text-[9px] font-bold px-2 py-0.5 rounded mb-1.5">
+                    NOVIDADE
+                  </div>
+                  <h4 class="font-bold text-slate-800 text-[13px] leading-tight mb-1">
+                    Atendimento Rápido e Produtos Prontos
+                  </h4>
+                  <p class="text-[10px] text-slate-500 mb-3">Peça pelo WhatsApp e receba com rapidez.</p>
+                  
+                  <div class="bg-brand-green text-white text-[10px] font-bold py-1.5 px-3 rounded-lg flex items-center justify-center gap-1.5 shadow-sm">
+                    <span>Conversar no WhatsApp</span>
+                  </div>
+                </div>
+
+                <!-- Mockup Content Grid -->
+                <div class="p-3 space-y-2">
+                  <div class="text-[11px] font-bold text-slate-700 flex justify-between items-center">
+                    <span>Serviços em Destaque</span>
+                    <span class="text-[9px] text-brand-blue font-semibold">Ver tudo</span>
+                  </div>
+
+                  <div class="grid grid-cols-2 gap-2">
+                    <div class="bg-slate-50 p-2 rounded-xl border border-slate-200/80">
+                      <div class="w-full h-12 bg-blue-100 rounded-lg flex items-center justify-center text-brand-blue mb-1.5">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                      </div>
+                      <div class="font-bold text-[10px] text-slate-800 truncate">Produto / Oferta</div>
+                      <div class="text-brand-blue font-extrabold text-[10px]">1.500 MT</div>
+                    </div>
+                    <div class="bg-slate-50 p-2 rounded-xl border border-slate-200/80">
+                      <div class="w-full h-12 bg-emerald-100 rounded-lg flex items-center justify-center text-emerald-600 mb-1.5">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                      </div>
+                      <div class="font-bold text-[10px] text-slate-800 truncate">Serviço Rápido</div>
+                      <div class="text-brand-blue font-extrabold text-[10px]">2.000 MT</div>
+                    </div>
+                  </div>
+
+                  <!-- Mockup Location & Contact pill -->
+                  <div class="bg-slate-100 p-2 rounded-xl flex items-center gap-2 text-[10px] text-slate-600">
+                    <svg class="w-4 h-4 text-rose-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                    <span class="truncate">Localização no mapa e contactos directos</span>
+                  </div>
+                </div>
+
+                <!-- Mockup Bottom Bar -->
+                <div class="bg-white border-t border-slate-100 p-2 flex justify-around text-[9px] text-slate-400 font-medium">
+                  <span class="text-brand-blue font-bold">Início</span>
+                  <span>Catálogo</span>
+                  <span>Sobre</span>
+                  <span>Contactar</span>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Side Indicators Checklist -->
+            <div class="mt-6 bg-white/95 backdrop-blur-sm rounded-2xl p-4 border border-slate-200 shadow-md">
+              <div class="grid grid-cols-2 gap-2 text-xs font-semibold text-slate-700">
+                <div class="flex items-center gap-2">
+                  <span class="w-5 h-5 rounded-full bg-blue-100 text-brand-blue flex items-center justify-center text-[11px] font-bold">✓</span>
+                  <span>Mobile</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-5 h-5 rounded-full bg-emerald-100 text-brand-green flex items-center justify-center text-[11px] font-bold">✓</span>
+                  <span>WhatsApp</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-5 h-5 rounded-full bg-blue-100 text-brand-blue flex items-center justify-center text-[11px] font-bold">✓</span>
+                  <span>Contactos</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-5 h-5 rounded-full bg-blue-100 text-brand-blue flex items-center justify-center text-[11px] font-bold">✓</span>
+                  <span>Localização</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-5 h-5 rounded-full bg-blue-100 text-brand-blue flex items-center justify-center text-[11px] font-bold">✓</span>
+                  <span>Redes sociais</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-[11px] font-bold">✓</span>
+                  <span>Entrega 48H</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="border-y border-slate-200 bg-white py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+        <div>
+          <span class="font-display font-bold text-slate-900 text-base sm:text-lg">
+            Site Express 48H
+          </span>
+          <span class="text-slate-400 mx-2">—</span>
+          <span class="text-slate-600 font-medium text-sm sm:text-base">
+            por <strong class="text-brand-blue">Zedeck's IT</strong>
+          </span>
+        </div>
+        <div class="flex items-center gap-2 text-slate-500 text-sm font-medium">
+          <span class="inline-block w-2 h-2 rounded-full bg-brand-blue"></span>
+          <span>Design + tecnologia + publicação online.</span>
+        </div>
+        <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 bg-slate-100 px-3 py-1 rounded-full">
+          Moçambique • Entrega Ágil
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção: O Que Você Recebe -->
+  <section id="o-que-inclui" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-brand-blue mb-2">Estrutura Completa</h2>
+        <h3 class="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl text-slate-900 tracking-tight">
+          Tudo o que seu negócio precisa para começar online.
+        </h3>
+        <p class="mt-4 text-slate-600 text-base">
+          Uma landing page moderna projetada para transformar quem visita em contacto imediato pelo WhatsApp.
+        </p>
+      </div>
+
+      <!-- Feature Grid: 12 Core Capabilities -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Card 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-subtle hover:shadow-card-hover transition-all duration-200">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h4 class="font-display font-bold text-lg text-slate-900 mb-1.5">Landing page profissional</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">Página única focada em apresentar a sua empresa de forma elegante, direta e comercial.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-subtle hover:shadow-card-hover transition-all duration-200">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+          </div>
+          <h4 class="font-display font-bold text-lg text-slate-900 mb-1.5">Design responsivo</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">Adapta-se com precisão e beleza a qualquer ecrã: computadores, tablets e portáteis.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-subtle hover:shadow-card-hover transition-all duration-200">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-6 18h6"/></svg>
+          </div>
+          <h4 class="font-display font-bold text-lg text-slate-900 mb-1.5">Otimização para celular</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">Prioridade máxima para ecrãs de smartphones, garantindo carregamento leve e botões fáceis de tocar.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-subtle hover:shadow-card-hover transition-all duration-200">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-brand-green flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.031 2C6.496 2 2 6.496 2 12.031c0 1.954.558 3.784 1.523 5.341L2.09 22.062l4.828-1.402A9.972 9.972 0 0012.03 22c5.535 0 10.031-4.496 10.031-10.031C22.062 6.496 17.566 2 12.031 2zm0 18.25c-1.637 0-3.167-.47-4.464-1.282l-.32-.199-2.868.834.847-2.775-.213-.338a8.214 8.214 0 01-1.267-4.459c0-4.568 3.714-8.281 8.285-8.281 4.57 0 8.283 3.713 8.283 8.281 0 4.57-3.713 8.289-8.283 8.289z"/></svg>
+          </div>
+          <h4 class="font-display font-bold text-lg text-slate-900 mb-1.5">Botão WhatsApp integrado</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">Chamadas diretas com mensagem personalizada para você nunca perder uma venda ou consulta.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-subtle hover:shadow-card-hover transition-all duration-200">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+          </div>
+          <h4 class="font-display font-bold text-lg text-slate-900 mb-1.5">Serviços ou produtos</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">Apresentação clara dos seus preços, pratos, serviços de consultoria ou produtos de loja.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-subtle hover:shadow-card-hover transition-all duration-200">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+          <h4 class="font-display font-bold text-lg text-slate-900 mb-1.5">Galeria de imagens</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">Espaço organizado para fotos reais do seu espaço físico, trabalhos concluídos ou artigos.</p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-subtle hover:shadow-card-hover transition-all duration-200">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          </div>
+          <h4 class="font-display font-bold text-lg text-slate-900 mb-1.5">Contactos rápidos</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">Telefone direto para chamadas rápidas, WhatsApp e horário de funcionamento bem visível.</p>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-subtle hover:shadow-card-hover transition-all duration-200">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h4 class="font-display font-bold text-lg text-slate-900 mb-1.5">Localização no mapa</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">Indicação de endereço e ligação direta para o Google Maps para os seus clientes encontrarem o seu local.</p>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-subtle hover:shadow-card-hover transition-all duration-200">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+          </div>
+          <h4 class="font-display font-bold text-lg text-slate-900 mb-1.5">Redes sociais</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">Conexões diretas para a sua página no Facebook, perfil do Instagram, TikTok ou LinkedIn.</p>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-subtle hover:shadow-card-hover transition-all duration-200">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h4 class="font-display font-bold text-lg text-slate-900 mb-1.5">Formulário de contacto</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">Caixa de contacto simples que direciona as mensagens ou pedidos diretamente para você.</p>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-subtle hover:shadow-card-hover transition-all duration-200">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-brand-green flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <h4 class="font-display font-bold text-lg text-slate-900 mb-1.5">Publicação online</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">Nós configuramos e publicamos o site na web para que ele fique 100% acessível no mundo todo.</p>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-subtle hover:shadow-card-hover transition-all duration-200">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+          <h4 class="font-display font-bold text-lg text-slate-900 mb-1.5">SEO básico configurado</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">Meta tags, título correto e estrutura semântica para que o seu negócio seja encontrado nas pesquisas.</p>
+        </div>
+
+      </div>
+
+      <!-- Honest Project Scope Note -->
+      <div class="mt-12 bg-white rounded-2xl p-5 border border-slate-200 text-center max-w-2xl mx-auto">
+        <p class="text-xs sm:text-sm text-slate-500 font-medium">
+          <span class="text-brand-blue font-bold">Nota:</span> Os recursos e conteúdo finais são definidos de acordo com o projeto contratado.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Seção: Feito para o Seu Negócio -->
+  <section id="segmentos" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-brand-blue mb-2">Versatilidade</h2>
+        <h3 class="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl text-slate-900 tracking-tight">
+          Feito para o seu negócio.
+        </h3>
+        <p class="mt-4 text-slate-600 text-base">
+          Ideal para pequenos negócios, empreendedores e profissionais que querem vender mais sem complicação.
+        </p>
+      </div>
+
+      <!-- Categories Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-blue/40 transition-colors">
+          <div class="text-3xl mb-3">🍔</div>
+          <h4 class="font-display font-bold text-slate-800 text-base mb-1">Restaurantes e Takeaways</h4>
+          <p class="text-xs text-slate-500">Mostre o seu cardápio com preços e receba pedidos no WhatsApp.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-blue/40 transition-colors">
+          <div class="text-3xl mb-3">💈</div>
+          <h4 class="font-display font-bold text-slate-800 text-base mb-1">Barbearias e Salões</h4>
+          <p class="text-xs text-slate-500">Apresente serviços, tabela de preços e facilite o agendamento de clientes.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-blue/40 transition-colors">
+          <div class="text-3xl mb-3">🛍️</div>
+          <h4 class="font-display font-bold text-slate-800 text-base mb-1">Lojas e Boutiques</h4>
+          <p class="text-xs text-slate-500">Exponha coleções de roupas, calçados e novidades com botão de compra direto.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-blue/40 transition-colors">
+          <div class="text-3xl mb-3">🏢</div>
+          <h4 class="font-display font-bold text-slate-800 text-base mb-1">Empresas</h4>
+          <p class="text-xs text-slate-500">Credibilidade institucional e apresentação dos serviços corporativos da sua empresa.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-blue/40 transition-colors">
+          <div class="text-3xl mb-3">🎓</div>
+          <h4 class="font-display font-bold text-slate-800 text-base mb-1">Escolas e Centros de Formação</h4>
+          <p class="text-xs text-slate-500">Divulgue cursos, inscrições abertas, calendário e formulário para matrículas.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-blue/40 transition-colors">
+          <div class="text-3xl mb-3">🧑‍💼</div>
+          <h4 class="font-display font-bold text-slate-800 text-base mb-1">Profissionais e Prestadores</h4>
+          <p class="text-xs text-slate-500">Para advogados, técnicos, consultores, eletricistas e especialistas independentes.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-blue/40 transition-colors">
+          <div class="text-3xl mb-3">🏠</div>
+          <h4 class="font-display font-bold text-slate-800 text-base mb-1">Imobiliárias</h4>
+          <p class="text-xs text-slate-500">Destaque imóveis disponíveis para arrendamento e venda com fotos e contacto.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-blue/40 transition-colors">
+          <div class="text-3xl mb-3">📸</div>
+          <h4 class="font-display font-bold text-slate-800 text-base mb-1">Fotógrafos e Criativos</h4>
+          <p class="text-xs text-slate-500">Portfólio visual limpo para ensaios, eventos e contacto para orçamentos rápidos.</p>
+        </div>
+
+      </div>
+
+      <!-- Segment CTA -->
+      <div class="mt-12 text-center">
+        <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Vi%20o%20Site%20Express%2048H%20e%20quero%20colocar%20meu%20neg%C3%B3cio%20online." 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="inline-flex items-center gap-3 bg-brand-dark hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-bold text-sm sm:text-base shadow-lg transition-all duration-200 hover:-translate-y-0.5">
+          <span>QUERO COLOCAR MEU NEGÓCIO ONLINE</span>
+          <svg class="w-5 h-5 text-brand-green fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 2C6.496 2 2 6.496 2 12.031c0 1.954.558 3.784 1.523 5.341L2.09 22.062l4.828-1.402A9.972 9.972 0 0012.03 22c5.535 0 10.031-4.496 10.031-10.031C22.062 6.496 17.566 2 12.031 2zm0 18.25c-1.637 0-3.167-.47-4.464-1.282l-.32-.199-2.868.834.847-2.775-.213-.338a8.214 8.214 0 01-1.267-4.459c0-4.568 3.714-8.281 8.285-8.281 4.57 0 8.283 3.713 8.283 8.281 0 4.57-3.713 8.289-8.283 8.289z"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Seção Principal dos 3 Demos -->
+  <section id="demos" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 text-brand-blue text-xs font-bold uppercase mb-3">
+          Modelos Reais Interativos
+        </div>
+        <h3 class="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl text-slate-900 tracking-tight">
+          Veja como seu negócio pode ficar.
+        </h3>
+        <p class="mt-4 text-slate-600 text-base">
+          Escolha um estilo. Nós adaptamos o conteúdo à sua marca. Clique em <strong>"VER DEMO"</strong> para abrir a experiência completa.
+        </p>
+      </div>
+
+      <!-- The 3 Big Demo Cards -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- DEMO 01: FOOD -->
+        <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-subtle hover:shadow-card-hover transition-all duration-300 flex flex-col">
+          <!-- Card Header & Badge -->
+          <div class="p-6 bg-gradient-to-r from-amber-50 to-orange-50 border-b border-orange-100">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold tracking-wider uppercase text-amber-700 bg-amber-100/80 px-2.5 py-1 rounded-lg">Demo 01</span>
+              <span class="text-xs font-semibold text-slate-500">48 Horas</span>
+            </div>
+            <h4 class="font-display font-extrabold text-2xl text-slate-900">FOOD</h4>
+            <p class="text-xs text-slate-600 font-medium mt-1">Restaurantes • Takeaways • Cafés • Delivery</p>
+          </div>
+
+          <!-- Interactive Visual Preview Window -->
+          <div class="p-5 flex-1 flex flex-col">
+            <div class="rounded-2xl border border-slate-200 bg-slate-900 text-white p-4 mb-4 relative overflow-hidden group">
+              <!-- Mini Header -->
+              <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-3">
+                <span class="font-bold text-xs text-amber-400">Sabor Express</span>
+                <span class="text-[10px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded font-mono">Aberto</span>
+              </div>
+              <div class="text-xs font-bold mb-1 text-slate-100">"Sabor que chega até você."</div>
+              <p class="text-[11px] text-slate-400 mb-3">Descubra nosso menu, faça seu pedido e receba onde estiver.</p>
+              
+              <!-- Sample items -->
+              <div class="space-y-1.5 text-[11px]">
+                <div class="flex justify-between items-center bg-slate-800/80 px-2.5 py-1.5 rounded-lg border border-slate-700/60">
+                  <span class="text-slate-200">Hambúrguer Clássico</span>
+                  <span class="font-bold text-amber-400">450 MT</span>
+                </div>
+                <div class="flex justify-between items-center bg-slate-800/80 px-2.5 py-1.5 rounded-lg border border-slate-700/60">
+                  <span class="text-slate-200">Pizza Especial</span>
+                  <span class="font-bold text-amber-400">650 MT</span>
+                </div>
+                <div class="flex justify-between items-center bg-slate-800/80 px-2.5 py-1.5 rounded-lg border border-slate-700/60">
+                  <span class="text-slate-200">Frango Grelhado</span>
+                  <span class="font-bold text-amber-400">550 MT</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="text-xs text-slate-500 mb-5">
+              Ideal para cardápios com fotos, botões diretos de pedidos para o WhatsApp, horários de entrega e localização.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="mt-auto space-y-2.5">
+              <button onclick="openDemoModal('food')" 
+                      class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 px-4 rounded-xl text-sm transition-all duration-200 flex items-center justify-center gap-2">
+                <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                <span>VER DEMO FOOD</span>
+              </button>
+
+              <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Food." 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="w-full bg-brand-green hover:bg-brand-greenHover text-white font-semibold py-3 px-4 rounded-xl text-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-sm">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 2C6.496 2 2 6.496 2 12.031c0 1.954.558 3.784 1.523 5.341L2.09 22.062l4.828-1.402A9.972 9.972 0 0012.03 22c5.535 0 10.031-4.496 10.031-10.031C22.062 6.496 17.566 2 12.031 2zm0 18.25c-1.637 0-3.167-.47-4.464-1.282l-.32-.199-2.868.834.847-2.775-.213-.338a8.214 8.214 0 01-1.267-4.459c0-4.568 3.714-8.281 8.285-8.281 4.57 0 8.283 3.713 8.283 8.281 0 4.57-3.713 8.289-8.283 8.289z"/></svg>
+                <span>QUERO ESTE</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- DEMO 02: BUSINESS -->
+        <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-subtle hover:shadow-card-hover transition-all duration-300 flex flex-col">
+          <!-- Card Header & Badge -->
+          <div class="p-6 bg-gradient-to-r from-blue-50 to-indigo-50 border-b border-blue-100">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold tracking-wider uppercase text-brand-blue bg-blue-100/80 px-2.5 py-1 rounded-lg">Demo 02</span>
+              <span class="text-xs font-semibold text-slate-500">48 Horas</span>
+            </div>
+            <h4 class="font-display font-extrabold text-2xl text-slate-900">BUSINESS</h4>
+            <p class="text-xs text-slate-600 font-medium mt-1">Serviços • Empresas • Profissionais</p>
+          </div>
+
+          <!-- Interactive Visual Preview Window -->
+          <div class="p-5 flex-1 flex flex-col">
+            <div class="rounded-2xl border border-slate-200 bg-brand-dark text-white p-4 mb-4 relative overflow-hidden">
+              <!-- Mini Header -->
+              <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-3">
+                <span class="font-bold text-xs text-blue-400">Apex Consulting</span>
+                <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded font-mono">B2B</span>
+              </div>
+              <div class="text-xs font-bold mb-1 text-slate-100">"O seu serviço. A um clique de distância."</div>
+              <p class="text-[11px] text-slate-400 mb-3">Apresente o seu trabalho, conquiste novos clientes e facilite os contactos.</p>
+              
+              <!-- Sample items -->
+              <div class="grid grid-cols-2 gap-1.5 text-[11px]">
+                <div class="bg-slate-800/80 p-2 rounded-lg border border-slate-700/60">
+                  <span class="block font-bold text-blue-400">Consultoria</span>
+                  <span class="text-[10px] text-slate-300">Estratégica</span>
+                </div>
+                <div class="bg-slate-800/80 p-2 rounded-lg border border-slate-700/60">
+                  <span class="block font-bold text-blue-400">Desenvolvimento</span>
+                  <span class="text-[10px] text-slate-300">Soluções TI</span>
+                </div>
+                <div class="bg-slate-800/80 p-2 rounded-lg border border-slate-700/60">
+                  <span class="block font-bold text-blue-400">Marketing</span>
+                  <span class="text-[10px] text-slate-300">Presença Digital</span>
+                </div>
+                <div class="bg-slate-800/80 p-2 rounded-lg border border-slate-700/60">
+                  <span class="block font-bold text-blue-400">Suporte</span>
+                  <span class="text-[10px] text-slate-300">Atendimento</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="text-xs text-slate-500 mb-5">
+              Ideal para consultores, empresas prestadoras de serviços, engenharia, contabilidade e escritórios.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="mt-auto space-y-2.5">
+              <button onclick="openDemoModal('business')" 
+                      class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 px-4 rounded-xl text-sm transition-all duration-200 flex items-center justify-center gap-2">
+                <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                <span>VER DEMO BUSINESS</span>
+              </button>
+
+              <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Business." 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="w-full bg-brand-green hover:bg-brand-greenHover text-white font-semibold py-3 px-4 rounded-xl text-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-sm">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 2C6.496 2 2 6.496 2 12.031c0 1.954.558 3.784 1.523 5.341L2.09 22.062l4.828-1.402A9.972 9.972 0 0012.03 22c5.535 0 10.031-4.496 10.031-10.031C22.062 6.496 17.566 2 12.031 2zm0 18.25c-1.637 0-3.167-.47-4.464-1.282l-.32-.199-2.868.834.847-2.775-.213-.338a8.214 8.214 0 01-1.267-4.459c0-4.568 3.714-8.281 8.285-8.281 4.57 0 8.283 3.713 8.283 8.281 0 4.57-3.713 8.289-8.283 8.289z"/></svg>
+                <span>QUERO ESTE</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- DEMO 03: STORE -->
+        <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-subtle hover:shadow-card-hover transition-all duration-300 flex flex-col">
+          <!-- Card Header & Badge -->
+          <div class="p-6 bg-gradient-to-r from-emerald-50 to-teal-50 border-b border-emerald-100">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold tracking-wider uppercase text-emerald-700 bg-emerald-100/80 px-2.5 py-1 rounded-lg">Demo 03</span>
+              <span class="text-xs font-semibold text-slate-500">48 Horas</span>
+            </div>
+            <h4 class="font-display font-extrabold text-2xl text-slate-900">STORE</h4>
+            <p class="text-xs text-slate-600 font-medium mt-1">Lojas • Moda • Eletrónicos • Produtos</p>
+          </div>
+
+          <!-- Interactive Visual Preview Window -->
+          <div class="p-5 flex-1 flex flex-col">
+            <div class="rounded-2xl border border-slate-200 bg-slate-900 text-white p-4 mb-4 relative overflow-hidden">
+              <!-- Mini Header -->
+              <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-3">
+                <span class="font-bold text-xs text-emerald-400">Urban Store</span>
+                <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded font-mono">Stock</span>
+              </div>
+              <div class="text-xs font-bold mb-1 text-slate-100">"Tudo o que procura, num só lugar."</div>
+              <p class="text-[11px] text-slate-400 mb-3">Apresente seus produtos e transforme visitantes em clientes.</p>
+              
+              <!-- Sample items -->
+              <div class="grid grid-cols-2 gap-1.5 text-[11px]">
+                <div class="bg-slate-800/80 p-2 rounded-lg border border-slate-700/60">
+                  <div class="font-bold text-slate-200">Smart Watch</div>
+                  <div class="text-emerald-400 font-extrabold">2.500 MT</div>
+                </div>
+                <div class="bg-slate-800/80 p-2 rounded-lg border border-slate-700/60">
+                  <div class="font-bold text-slate-200">Headphones</div>
+                  <div class="text-emerald-400 font-extrabold">1.800 MT</div>
+                </div>
+                <div class="bg-slate-800/80 p-2 rounded-lg border border-slate-700/60">
+                  <div class="font-bold text-slate-200">Tênis Casual</div>
+                  <div class="text-emerald-400 font-extrabold">3.000 MT</div>
+                </div>
+                <div class="bg-slate-800/80 p-2 rounded-lg border border-slate-700/60">
+                  <div class="font-bold text-slate-200">Mochila Urbana</div>
+                  <div class="text-emerald-400 font-extrabold">1.500 MT</div>
+                </div>
+              </div>
+            </div>
+
+            <p class="text-xs text-slate-500 mb-5">
+              Ideal para quem vende calçados, vestuário, acessórios ou gadgets e quer receber compras no WhatsApp.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="mt-auto space-y-2.5">
+              <button onclick="openDemoModal('store')" 
+                      class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 px-4 rounded-xl text-sm transition-all duration-200 flex items-center justify-center gap-2">
+                <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                <span>VER DEMO STORE</span>
+              </button>
+
+              <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Store." 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="w-full bg-brand-green hover:bg-brand-greenHover text-white font-semibold py-3 px-4 rounded-xl text-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-sm">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 2C6.496 2 2 6.496 2 12.031c0 1.954.558 3.784 1.523 5.341L2.09 22.062l4.828-1.402A9.972 9.972 0 0012.03 22c5.535 0 10.031-4.496 10.031-10.031C22.062 6.496 17.566 2 12.031 2zm0 18.25c-1.637 0-3.167-.47-4.464-1.282l-.32-.199-2.868.834.847-2.775-.213-.338a8.214 8.214 0 01-1.267-4.459c0-4.568 3.714-8.281 8.285-8.281 4.57 0 8.283 3.713 8.283 8.281 0 4.57-3.713 8.289-8.283 8.289z"/></svg>
+                <span>QUERO ESTE</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Seção: Como Funciona -->
+  <section id="como-funciona" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-brand-blue mb-2">Processo Rápido</h2>
+        <h3 class="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl text-slate-900 tracking-tight">
+          Do zero ao online em 4 passos.
+        </h3>
+        <p class="mt-4 text-slate-600 text-base">
+          Sem burocracia ou termos técnicos complicados. Tratamos de tudo com rapidez.
+        </p>
+      </div>
+
+      <!-- 4 Steps Flow -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Passo 1 -->
+        <div class="relative bg-slate-50 p-6 rounded-2xl border border-slate-200">
+          <div class="w-10 h-10 rounded-xl bg-brand-blue text-white font-display font-bold text-lg flex items-center justify-center mb-4">
+            01
+          </div>
+          <h4 class="font-display font-bold text-lg text-slate-900 mb-2">Fale conosco</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Envie uma mensagem pelo WhatsApp para alinharmos o objetivo do seu site e o modelo escolhido.
+          </p>
+        </div>
+
+        <!-- Passo 2 -->
+        <div class="relative bg-slate-50 p-6 rounded-2xl border border-slate-200">
+          <div class="w-10 h-10 rounded-xl bg-brand-blue text-white font-display font-bold text-lg flex items-center justify-center mb-4">
+            02
+          </div>
+          <h4 class="font-display font-bold text-lg text-slate-900 mb-2">Envie os materiais</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Envie logotipo, fotos, textos, produtos ou serviços, contactos e localização do seu negócio.
+          </p>
+        </div>
+
+        <!-- Passo 3 -->
+        <div class="relative bg-slate-50 p-6 rounded-2xl border border-slate-200">
+          <div class="w-10 h-10 rounded-xl bg-brand-blue text-white font-display font-bold text-lg flex items-center justify-center mb-4">
+            03
+          </div>
+          <h4 class="font-display font-bold text-lg text-slate-900 mb-2">Nós criamos</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Desenvolvemos e organizamos toda a sua landing page profissional com design responsivo.
+          </p>
+        </div>
+
+        <!-- Passo 4 -->
+        <div class="relative bg-slate-50 p-6 rounded-2xl border border-slate-200">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white font-display font-bold text-lg flex items-center justify-center mb-4">
+            04
+          </div>
+          <h4 class="font-display font-bold text-slate-900 mb-2">Publicamos</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Seu site fica online em até 48 horas pronto para você divulgar e receber novos clientes.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Timeline CTA -->
+      <div class="mt-14 text-center">
+        <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Vi%20o%20Site%20Express%2048H%20e%20quero%20come%C3%A7ar%20agora." 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="inline-flex items-center gap-3 bg-brand-blue hover:bg-brand-blueHover text-white px-9 py-4 rounded-xl font-bold text-base shadow-lg shadow-blue-500/20 hover:shadow-glow-blue transition-all duration-200 transform hover:-translate-y-0.5">
+          <span>COMEÇAR AGORA</span>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Seção: Preço -->
+  <section id="preco" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-brand-blue mb-2">Transparência Total</h2>
+        <h3 class="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl text-slate-900 tracking-tight">
+          Comece por apenas 4.000 MT.
+        </h3>
+        <p class="mt-4 text-slate-600 text-base">
+          Preço justo, sem cobranças ocultas e pagamento em duas parcelas para a sua tranquilidade.
+        </p>
+      </div>
+
+      <!-- Centered Pricing Card -->
+      <div class="max-w-xl mx-auto bg-white rounded-3xl border-2 border-brand-blue shadow-card-hover overflow-hidden">
+        
+        <!-- Header -->
+        <div class="bg-brand-blue p-8 text-white text-center relative">
+          <div class="inline-block bg-white/20 text-white font-bold text-xs uppercase px-3 py-1 rounded-full mb-3">
+            PACOTE COMPLETO
+          </div>
+          <h4 class="font-display font-extrabold text-3xl">SITE EXPRESS 48H</h4>
+          <div class="mt-4 flex items-baseline justify-center gap-2">
+            <span class="text-5xl font-extrabold font-display">4.000 MT</span>
+            <span class="text-blue-100 text-sm">/ pagamento único</span>
+          </div>
+          <p class="text-xs text-blue-100 mt-2 font-medium">Entrega em até 48 horas após pagamento inicial e envio dos materiais</p>
+        </div>
+
+        <!-- Body & Included Checklist -->
+        <div class="p-8">
+          <div class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4">O que está incluído:</div>
+          
+          <ul class="space-y-3.5 text-sm text-slate-700">
+            <li class="flex items-center gap-3">
+              <span class="w-5 h-5 rounded-full bg-blue-100 text-brand-blue flex items-center justify-center text-xs font-bold flex-shrink-0">✓</span>
+              <span>Landing page profissional sob medida</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-5 h-5 rounded-full bg-blue-100 text-brand-blue flex items-center justify-center text-xs font-bold flex-shrink-0">✓</span>
+              <span>Design totalmente responsivo (mobile, tablet, desktop)</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-5 h-5 rounded-full bg-emerald-100 text-brand-green flex items-center justify-center text-xs font-bold flex-shrink-0">✓</span>
+              <span>Integração de WhatsApp para contacto imediato</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-5 h-5 rounded-full bg-blue-100 text-brand-blue flex items-center justify-center text-xs font-bold flex-shrink-0">✓</span>
+              <span>Seção de produtos, serviços ou cardápio com preços</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-5 h-5 rounded-full bg-blue-100 text-brand-blue flex items-center justify-center text-xs font-bold flex-shrink-0">✓</span>
+              <span>Galeria de imagens do seu negócio</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-5 h-5 rounded-full bg-blue-100 text-brand-blue flex items-center justify-center text-xs font-bold flex-shrink-0">✓</span>
+              <span>Contactos, mapa de localização e redes sociais</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-5 h-5 rounded-full bg-blue-100 text-brand-blue flex items-center justify-center text-xs font-bold flex-shrink-0">✓</span>
+              <span>Publicação online e estrutura básica de SEO</span>
+            </li>
+            <li class="flex items-center gap-3 font-semibold text-brand-blue">
+              <span class="w-5 h-5 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold flex-shrink-0">⚡</span>
+              <span>Entrega rápida em até 48 horas</span>
+            </li>
+          </ul>
+
+          <!-- Payment Breakdown Box -->
+          <div class="mt-8 p-4 rounded-2xl bg-slate-50 border border-slate-200">
+            <div class="text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">Condição facilitada de pagamento</div>
+            <div class="flex flex-col sm:flex-row justify-between gap-2 text-sm font-semibold text-slate-800">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-brand-blue"></span>
+                <span><strong>2.000 MT</strong> para começar</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                <span><strong>2.000 MT</strong> na entrega</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pricing CTA -->
+          <div class="mt-8">
+            <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20contratar%20o%20Site%20Express%20por%204.000%20MT." 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="w-full inline-flex items-center justify-center gap-3 bg-brand-green hover:bg-brand-greenHover text-white py-4 px-6 rounded-xl font-bold text-base shadow-md hover:shadow-glow-green transition-all duration-200">
+              <span>RESERVAR MINHA VAGA</span>
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M12.031 2C6.496 2 2 6.496 2 12.031c0 1.954.558 3.784 1.523 5.341L2.09 22.062l4.828-1.402A9.972 9.972 0 0012.03 22c5.535 0 10.031-4.496 10.031-10.031C22.062 6.496 17.566 2 12.031 2zm0 18.25c-1.637 0-3.167-.47-4.464-1.282l-.32-.199-2.868.834.847-2.775-.213-.338a8.214 8.214 0 01-1.267-4.459c0-4.568 3.714-8.281 8.285-8.281 4.57 0 8.283 3.713 8.283 8.281 0 4.57-3.713 8.289-8.283 8.289z"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Note -->
+          <p class="mt-4 text-center text-xs text-slate-400">
+            * Domínio e serviços externos, quando necessários, podem ter custos separados.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Seção: FAQ -->
+  <section id="faq" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-14">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-brand-blue mb-2">Dúvidas Comuns</h2>
+        <h3 class="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl text-slate-900 tracking-tight">
+          Perguntas Frequentes
+        </h3>
+        <p class="mt-3 text-slate-600 text-base">
+          Tire suas dúvidas antes de iniciar o seu projeto.
+        </p>
+      </div>
+
+      <!-- Accordion Container -->
+      <div class="space-y-3.5" id="faq-accordion">
+        
+        <!-- Item 1 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 transition-all">
+          <button class="faq-toggle w-full px-6 py-4 text-left font-display font-bold text-slate-900 flex justify-between items-center focus:outline-none" aria-expanded="true">
+            <span class="text-base sm:text-lg">Quanto custa?</span>
+            <span class="faq-icon text-brand-blue text-xl font-bold transition-transform duration-200">−</span>
+          </button>
+          <div class="faq-content px-6 pb-4 text-slate-600 text-sm leading-relaxed block">
+            O Site Express custa 4.000 MT.
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 transition-all">
+          <button class="faq-toggle w-full px-6 py-4 text-left font-display font-bold text-slate-900 flex justify-between items-center focus:outline-none" aria-expanded="false">
+            <span class="text-base sm:text-lg">Como funciona o pagamento?</span>
+            <span class="faq-icon text-brand-blue text-xl font-bold transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-content px-6 pb-4 text-slate-600 text-sm leading-relaxed hidden">
+            50% para iniciar (2.000 MT) e 50% na entrega (2.000 MT).
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 transition-all">
+          <button class="faq-toggle w-full px-6 py-4 text-left font-display font-bold text-slate-900 flex justify-between items-center focus:outline-none" aria-expanded="false">
+            <span class="text-base sm:text-lg">Quanto tempo demora?</span>
+            <span class="faq-icon text-brand-blue text-xl font-bold transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-content px-6 pb-4 text-slate-600 text-sm leading-relaxed hidden">
+            Até 48 horas após recebermos o pagamento inicial e todos os materiais necessários (logo, textos, fotos e contactos).
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 transition-all">
+          <button class="faq-toggle w-full px-6 py-4 text-left font-display font-bold text-slate-900 flex justify-between items-center focus:outline-none" aria-expanded="false">
+            <span class="text-base sm:text-lg">Preciso ter domínio?</span>
+            <span class="faq-icon text-brand-blue text-xl font-bold transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-content px-6 pb-4 text-slate-600 text-sm leading-relaxed hidden">
+            Não necessariamente. Podemos orientar sobre domínio e publicação online.
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 transition-all">
+          <button class="faq-toggle w-full px-6 py-4 text-left font-display font-bold text-slate-900 flex justify-between items-center focus:outline-none" aria-expanded="false">
+            <span class="text-base sm:text-lg">Posso usar meu próprio domínio?</span>
+            <span class="faq-icon text-brand-blue text-xl font-bold transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-content px-6 pb-4 text-slate-600 text-sm leading-relaxed hidden">
+            Sim. Caso já possua um domínio registrado, podemos apontar o site para ele.
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 transition-all">
+          <button class="faq-toggle w-full px-6 py-4 text-left font-display font-bold text-slate-900 flex justify-between items-center focus:outline-none" aria-expanded="false">
+            <span class="text-base sm:text-lg">Posso alterar o conteúdo depois?</span>
+            <span class="faq-icon text-brand-blue text-xl font-bold transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-content px-6 pb-4 text-slate-600 text-sm leading-relaxed hidden">
+            Sim. As condições de manutenção ou alterações posteriores dependem do projeto contratado.
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 transition-all">
+          <button class="faq-toggle w-full px-6 py-4 text-left font-display font-bold text-slate-900 flex justify-between items-center focus:outline-none" aria-expanded="false">
+            <span class="text-base sm:text-lg">Vocês fazem lojas online completas?</span>
+            <span class="faq-icon text-brand-blue text-xl font-bold transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-content px-6 pb-4 text-slate-600 text-sm leading-relaxed hidden">
+            O Site Express é focado em landing pages e sites institucionais rápidos. Projetos com funcionalidades avançadas (como carrinhos complexos ou integrações de pagamento de terceiros) podem ser orçamentados separadamente.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="py-20 bg-brand-dark text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-900/30 to-slate-900/50 pointer-events-none"></div>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-blue/20 border border-brand-blue/40 text-blue-400 font-semibold text-xs tracking-wider uppercase mb-6">
+        <span>⚡ 48 HORAS PARA O SEU LANÇAMENTO</span>
+      </div>
+
+      <h2 class="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight mb-5">
+        Seu negócio já está online?
+      </h2>
+
+      <p class="text-base sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10">
+        Se ainda não, podemos mudar isso em até 48 horas.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20come%C3%A7ar%20o%20meu%20Site%20Express%2048H." 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-blue hover:bg-brand-blueHover text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-xl shadow-blue-600/30 transition-all duration-200 transform hover:-translate-y-0.5">
+          <span>QUERO MEU SITE</span>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </a>
+
+        <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Vi%20o%20Site%20Express%2048H%20e%20quero%20tirar%20uma%20d%C3%BAvida." 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-800/80 hover:bg-slate-700 text-slate-200 border border-slate-700 px-8 py-5 rounded-2xl font-semibold text-base transition-all duration-200">
+          <svg class="w-5 h-5 text-brand-green fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 2C6.496 2 2 6.496 2 12.031c0 1.954.558 3.784 1.523 5.341L2.09 22.062l4.828-1.402A9.972 9.972 0 0012.03 22c5.535 0 10.031-4.496 10.031-10.031C22.062 6.496 17.566 2 12.031 2zm0 18.25c-1.637 0-3.167-.47-4.464-1.282l-.32-.199-2.868.834.847-2.775-.213-.338a8.214 8.214 0 01-1.267-4.459c0-4.568 3.714-8.281 8.285-8.281 4.57 0 8.283 3.713 8.283 8.281 0 4.57-3.713 8.289-8.283 8.289z"/>
+          </svg>
+          <span>Tirar dúvidas (+258 87 770 3308)</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-darker text-slate-400 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-center md:text-left">
+        
+        <div>
+          <div class="font-display font-bold text-xl text-white">
+            SITE EXPRESS <span class="text-brand-blue">48H</span>
+          </div>
+          <p class="text-xs text-slate-400 mt-1">Uma oferta da Zedeck's IT</p>
+        </div>
+
+        <nav class="flex flex-wrap justify-center gap-6 text-sm font-medium text-slate-300">
+          <a href="#hero" class="hover:text-white transition-colors">Início</a>
+          <a href="#o-que-inclui" class="hover:text-white transition-colors">O que inclui</a>
+          <a href="#demos" class="hover:text-white transition-colors">Demos</a>
+          <a href="#como-funciona" class="hover:text-white transition-colors">Como funciona</a>
+          <a href="#preco" class="hover:text-white transition-colors">Preço</a>
+          <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+          <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Vi%20o%20Site%20Express%2048H%20e%20quero%20saber%20mais." 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="text-brand-green hover:underline">WhatsApp (87 770 3308)</a>
+        </nav>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 text-center sm:text-left">
+        <div>
+          © 2026 Zedeck's IT. Todos os direitos reservados.
+        </div>
+        <div>
+          siteexpress.zedecks.com • Maputo / Moçambique
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <div class="fixed bottom-6 right-6 z-40 group flex items-center">
+    <span class="hidden sm:inline-block mr-3 px-3 py-1.5 rounded-xl bg-slate-900 text-white text-xs font-semibold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+      Falar no WhatsApp
+    </span>
+    <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Vi%20o%20Site%20Express%2048H%20e%20quero%20saber%20mais." 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Falar no WhatsApp com Site Express"
+       class="w-14 h-14 bg-brand-green hover:bg-brand-greenHover text-white rounded-full flex items-center justify-center shadow-xl hover:shadow-glow-green transform hover:scale-105 transition-all duration-200">
+      <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+        <path d="M12.031 2C6.496 2 2 6.496 2 12.031c0 1.954.558 3.784 1.523 5.341L2.09 22.062l4.828-1.402A9.972 9.972 0 0012.03 22c5.535 0 10.031-4.496 10.031-10.031C22.062 6.496 17.566 2 12.031 2zm0 18.25c-1.637 0-3.167-.47-4.464-1.282l-.32-.199-2.868.834.847-2.775-.213-.338a8.214 8.214 0 01-1.267-4.459c0-4.568 3.714-8.281 8.285-8.281 4.57 0 8.283 3.713 8.283 8.281 0 4.57-3.713 8.289-8.283 8.289z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Fullscreen Interactive Demos Modal Drawer -->
+  <div id="demo-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex-col justify-end md:justify-center items-center p-0 md:p-6 transition-all duration-300">
+    
+    <div class="bg-white w-full max-w-5xl h-full md:h-[92vh] md:rounded-3xl flex flex-col overflow-hidden shadow-2xl">
+      
+      <!-- Top Demo Navigation Bar -->
+      <div class="bg-slate-900 text-white px-4 py-3 flex items-center justify-between border-b border-slate-800 flex-shrink-0">
+        <div class="flex items-center gap-3">
+          <button onclick="closeDemoModal()" 
+                  class="flex items-center gap-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors">
+            <span>← Voltar para Site Express</span>
+          </button>
+          <div class="hidden sm:flex items-center gap-2 text-xs">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+            <span id="demo-modal-title" class="font-bold text-slate-100">Visualização de Demonstração</span>
+            <span class="text-slate-500 font-mono text-[10px]">(Fictício para demonstração)</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <!-- WhatsApp Call to Action Button inside demo -->
+          <a id="demo-modal-cta" 
+             href="#" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="bg-brand-green hover:bg-brand-greenHover text-white px-4 py-1.5 rounded-xl font-bold text-xs sm:text-sm flex items-center gap-1.5 shadow-sm transition-colors">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 2C6.496 2 2 6.496 2 12.031c0 1.954.558 3.784 1.523 5.341L2.09 22.062l4.828-1.402A9.972 9.972 0 0012.03 22c5.535 0 10.031-4.496 10.031-10.031C22.062 6.496 17.566 2 12.031 2zm0 18.25c-1.637 0-3.167-.47-4.464-1.282l-.32-.199-2.868.834.847-2.775-.213-.338a8.214 8.214 0 01-1.267-4.459c0-4.568 3.714-8.281 8.285-8.281 4.57 0 8.283 3.713 8.283 8.281 0 4.57-3.713 8.289-8.283 8.289z"/></svg>
+            <span>QUERO UM SITE ASSIM</span>
+          </a>
+
+          <!-- Close Modal Icon -->
+          <button onclick="closeDemoModal()" class="text-slate-400 hover:text-white p-1 rounded-lg">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Demo Inner Scrollable Viewport -->
+      <div id="demo-content-container" class="flex-1 overflow-y-auto bg-slate-100">
+        <!-- Dynamic Demo Container populated by JS -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JavaScript Handlers -->
+  <script>
+    // 1. Mobile Menu Toggler
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      const isExpanded = mobileMenu.classList.toggle('hidden');
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        hamburgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      });
+    });
+
+    // 2. FAQ Accordion Logic
+    const faqToggles = document.querySelectorAll('.faq-toggle');
+    faqToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const content = toggle.nextElementSibling;
+        const icon = toggle.querySelector('.faq-icon');
+        const isHidden = content.classList.contains('hidden');
+
+        // Close all first for clean accordion UX
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.faq-icon').forEach(i => i.textContent = '+');
+        document.querySelectorAll('.faq-toggle').forEach(t => t.setAttribute('aria-expanded', 'false'));
+
+        if (isHidden) {
+          content.classList.remove('hidden');
+          icon.textContent = '−';
+          toggle.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // 3. Dynamic Fullscreen Demo Templates
+    const demoModal = document.getElementById('demo-modal');
+    const demoModalTitle = document.getElementById('demo-modal-title');
+    const demoModalCta = document.getElementById('demo-modal-cta');
+    const demoContentContainer = document.getElementById('demo-content-container');
+
+    const demoTemplates = {
+      // DEMO 01: FOOD
+      food: {
+        title: 'Demo 01 — FOOD (Restaurantes e Takeaways)',
+        ctaUrl: 'https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Food.',
+        html: `
+          <div class="bg-amber-50/40 text-slate-800 min-h-full font-sans">
+            <!-- Demo Header -->
+            <div class="bg-slate-900 text-white py-4 px-6 sticky top-0 z-30 flex items-center justify-between border-b border-slate-800 shadow-md">
+              <div class="flex items-center gap-2">
+                <span class="text-2xl">🍔</span>
+                <span class="font-display font-extrabold text-lg text-amber-400">Sabores Express</span>
+              </div>
+              <div class="text-xs font-semibold text-slate-300 hidden sm:block">Entrega rápida em Maputo e Matola</div>
+              <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Food." target="_blank" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-3 py-1.5 rounded-lg text-xs">
+                Pedir no WhatsApp
+              </a>
+            </div>
+
+            <!-- Demo Hero -->
+            <div class="bg-gradient-to-b from-slate-900 to-slate-800 text-white py-14 px-6 text-center">
+              <span class="bg-amber-500/20 text-amber-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Demo Fictício • Gastronomia</span>
+              <h1 class="font-display font-extrabold text-3xl sm:text-5xl mt-4 mb-3 text-white">Sabor que chega até você.</h1>
+              <p class="text-slate-300 max-w-xl mx-auto text-sm sm:text-base mb-6">Descubra nosso menu, faça seu pedido e receba onde estiver com toda a comodidade.</p>
+              <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Food." target="_blank" class="inline-flex items-center gap-2 bg-amber-500 text-slate-950 px-6 py-3 rounded-xl font-bold text-sm shadow-md">
+                <span>FAZER PEDIDO PELO WHATSAPP</span>
+              </a>
+            </div>
+
+            <!-- Demo Menu Section -->
+            <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6">
+              <div class="text-center mb-8">
+                <h2 class="font-display font-extrabold text-2xl text-slate-900">Destaques do Nosso Menu</h2>
+                <p class="text-xs text-slate-500">Exemplo demonstrativo de pratos e preços</p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <!-- Food Item 1 -->
+                <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm flex flex-col justify-between">
+                  <div>
+                    <div class="w-full h-32 bg-amber-100 rounded-xl flex items-center justify-center text-4xl mb-3">🍔</div>
+                    <h3 class="font-bold text-slate-900 text-base">Hambúrguer Clássico</h3>
+                    <p class="text-xs text-slate-500 mt-1">Hambúrguer artesanal, queijo cheddar, alface crocante e molho especial.</p>
+                  </div>
+                  <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                    <span class="font-extrabold text-amber-600 text-lg">450 MT</span>
+                    <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20pedir%20o%20Hamb%C3%BArguer%20Cl%C3%A1ssico%20do%20demo%20Food." target="_blank" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold px-3 py-1.5 rounded-lg">Pedir</a>
+                  </div>
+                </div>
+
+                <!-- Food Item 2 -->
+                <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm flex flex-col justify-between">
+                  <div>
+                    <div class="w-full h-32 bg-orange-100 rounded-xl flex items-center justify-center text-4xl mb-3">🍕</div>
+                    <h3 class="font-bold text-slate-900 text-base">Pizza Especial</h3>
+                    <p class="text-xs text-slate-500 mt-1">Molho artesanal, mozzarella, pepperoni crocante e azeitonas pretas.</p>
+                  </div>
+                  <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                    <span class="font-extrabold text-amber-600 text-lg">650 MT</span>
+                    <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20pedir%20a%20Pizza%20Especial%20do%20demo%20Food." target="_blank" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold px-3 py-1.5 rounded-lg">Pedir</a>
+                  </div>
+                </div>
+
+                <!-- Food Item 3 -->
+                <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm flex flex-col justify-between">
+                  <div>
+                    <div class="w-full h-32 bg-yellow-100 rounded-xl flex items-center justify-center text-4xl mb-3">🍗</div>
+                    <h3 class="font-bold text-slate-900 text-base">Frango Grelhado</h3>
+                    <p class="text-xs text-slate-500 mt-1">Grelhado na brasa ao piripiri suave, acompanhado de batatas douradas.</p>
+                  </div>
+                  <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                    <span class="font-extrabold text-amber-600 text-lg">550 MT</span>
+                    <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20pedir%20o%20Frango%20Grelhado%20do%20demo%20Food." target="_blank" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold px-3 py-1.5 rounded-lg">Pedir</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- About & Info in Demo -->
+              <div class="mt-12 bg-white rounded-2xl p-6 border border-slate-200">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Sobre Nosso Restaurante</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-4">Ingredientes frescos selecionados todos os dias para garantir o melhor sabor na sua mesa ou no conforto da sua casa.</p>
+                    <div class="text-xs text-slate-500 space-y-1">
+                      <div>📍 <strong>Localização:</strong> Av. Julius Nyerere, Polana, Maputo</div>
+                      <div>🕒 <strong>Horário:</strong> Terça a Domingo, das 11h às 22h</div>
+                    </div>
+                  </div>
+                  <div class="bg-amber-100/60 rounded-xl p-4 text-center">
+                    <span class="font-bold text-amber-900 text-sm block mb-1">Quer um site de comida assim?</span>
+                    <p class="text-xs text-amber-800 mb-3">Entregamos com suas fotos reais e o seu cardápio em 48 horas.</p>
+                    <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Food." target="_blank" class="inline-block bg-brand-green text-white font-bold text-xs py-2 px-4 rounded-lg">
+                      Falar com a Zedeck's IT
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        `
+      },
+
+      // DEMO 02: BUSINESS
+      business: {
+        title: 'Demo 02 — BUSINESS (Serviços e Profissionais)',
+        ctaUrl: 'https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Business.',
+        html: `
+          <div class="bg-slate-50 text-slate-800 min-h-full font-sans">
+            <!-- Demo Header -->
+            <div class="bg-white py-4 px-6 sticky top-0 z-30 flex items-center justify-between border-b border-slate-200 shadow-sm">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold">A</div>
+                <span class="font-display font-extrabold text-lg text-slate-900">Apex Soluções</span>
+              </div>
+              <div class="text-xs font-semibold text-slate-500 hidden sm:block">Consultoria Empresarial & Tecnologia</div>
+              <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Business." target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-3 py-1.5 rounded-lg text-xs">
+                Pedir Proposta
+              </a>
+            </div>
+
+            <!-- Demo Hero -->
+            <div class="bg-gradient-to-r from-slate-900 to-blue-950 text-white py-16 px-6 text-center">
+              <span class="bg-blue-500/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Demo Fictício • Serviços B2B</span>
+              <h1 class="font-display font-extrabold text-3xl sm:text-5xl mt-4 mb-3 text-white">O seu serviço. A um clique de distância.</h1>
+              <p class="text-slate-300 max-w-xl mx-auto text-sm sm:text-base mb-6">Apresente o seu trabalho, conquiste novos clientes e facilite os contactos corporativos.</p>
+              <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Business." target="_blank" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-bold text-sm shadow-md">
+                <span>FALAR NO WHATSAPP</span>
+              </a>
+            </div>
+
+            <!-- Demo Services Grid -->
+            <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6">
+              <div class="text-center mb-8">
+                <h2 class="font-display font-extrabold text-2xl text-slate-900">Nossos Serviços Especializados</h2>
+                <p class="text-xs text-slate-500">Exemplo demonstrativo de competências empresariais</p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                  <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold mb-3">01</div>
+                  <h3 class="font-bold text-slate-900 text-base mb-1">Consultoria Estratégica</h3>
+                  <p class="text-xs text-slate-600 leading-relaxed mb-4">Diagnóstico de processos, planejamento financeiro e reestruturação para empresas em crescimento.</p>
+                  <span class="text-xs font-semibold text-blue-600">Sob consulta • Contactar</span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                  <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold mb-3">02</div>
+                  <h3 class="font-bold text-slate-900 text-base mb-1">Desenvolvimento de Sistemas</h3>
+                  <p class="text-xs text-slate-600 leading-relaxed mb-4">Criação de soluções digitais personalizadas, automatização e integrações tecnológicas sob medida.</p>
+                  <span class="text-xs font-semibold text-blue-600">Sob consulta • Contactar</span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                  <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold mb-3">03</div>
+                  <h3 class="font-bold text-slate-900 text-base mb-1">Marketing e Posicionamento</h3>
+                  <p class="text-xs text-slate-600 leading-relaxed mb-4">Gestão de presença nas redes sociais, anúncios patrocinados e comunicação visual corporativa.</p>
+                  <span class="text-xs font-semibold text-blue-600">Sob consulta • Contactar</span>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                  <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold mb-3">04</div>
+                  <h3 class="font-bold text-slate-900 text-base mb-1">Suporte Técnico Contínuo</h3>
+                  <p class="text-xs text-slate-600 leading-relaxed mb-4">Manutenção de redes informáticas, segurança da informação e assistência aos colaboradores.</p>
+                  <span class="text-xs font-semibold text-blue-600">Sob consulta • Contactar</span>
+                </div>
+              </div>
+
+              <!-- Contact & Location Box -->
+              <div class="mt-8 bg-white rounded-2xl p-6 border border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div>
+                  <div class="font-bold text-slate-900 text-sm">Escritório Central</div>
+                  <div class="text-xs text-slate-500">Av. 24 de Julho, Edifício Platinum, Maputo</div>
+                </div>
+                <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Business." target="_blank" class="bg-brand-green text-white font-bold text-xs py-2.5 px-4 rounded-xl">
+                  Conversar com Especialista
+                </a>
+              </div>
+
+            </div>
+          </div>
+        `
+      },
+
+      // DEMO 03: STORE
+      store: {
+        title: 'Demo 03 — STORE (Lojas e Produtos)',
+        ctaUrl: 'https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Store.',
+        html: `
+          <div class="bg-slate-100 text-slate-800 min-h-full font-sans">
+            <!-- Demo Header -->
+            <div class="bg-white py-4 px-6 sticky top-0 z-30 flex items-center justify-between border-b border-slate-200 shadow-sm">
+              <div class="flex items-center gap-2">
+                <span class="text-2xl">🛍️</span>
+                <span class="font-display font-extrabold text-lg text-slate-900">Moda & Tech</span>
+              </div>
+              <div class="text-xs font-semibold text-slate-500 hidden sm:block">Entregas em todo o território nacional</div>
+              <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Store." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3 py-1.5 rounded-lg text-xs">
+                Catálogo WhatsApp
+              </a>
+            </div>
+
+            <!-- Demo Hero -->
+            <div class="bg-gradient-to-r from-emerald-900 to-slate-900 text-white py-14 px-6 text-center">
+              <span class="bg-emerald-500/20 text-emerald-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Demo Fictício • Loja Online Express</span>
+              <h1 class="font-display font-extrabold text-3xl sm:text-5xl mt-4 mb-3 text-white">Tudo o que procura, num só lugar.</h1>
+              <p class="text-slate-300 max-w-xl mx-auto text-sm sm:text-base mb-6">Apresente seus produtos e transforme visitantes em clientes directos no seu WhatsApp.</p>
+              <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20um%20site%20semelhante%20ao%20demo%20Store." target="_blank" class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-6 py-3 rounded-xl font-bold text-sm shadow-md">
+                <span>VER COLEÇÃO COMPLETA</span>
+              </a>
+            </div>
+
+            <!-- Demo Product Grid -->
+            <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6">
+              <div class="text-center mb-8">
+                <h2 class="font-display font-extrabold text-2xl text-slate-900">Produtos em Destaque</h2>
+                <p class="text-xs text-slate-500">Exemplos demonstrativos de itens à venda</p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                
+                <!-- Product 1 -->
+                <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between">
+                  <div>
+                    <div class="w-full h-36 bg-slate-100 rounded-xl flex items-center justify-center text-4xl mb-3">⌚</div>
+                    <div class="text-[10px] text-emerald-600 font-bold uppercase">Disponível</div>
+                    <h3 class="font-bold text-slate-900 text-sm">Smart Watch</h3>
+                  </div>
+                  <div class="mt-3 pt-2 border-t border-slate-100">
+                    <div class="font-extrabold text-slate-900 text-base mb-2">2.500 MT</div>
+                    <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20comprar%20o%20Smart%20Watch%20por%202.500%20MT." target="_blank" class="w-full block text-center bg-brand-green hover:bg-brand-greenHover text-white text-xs font-bold py-2 rounded-lg">
+                      Comprar
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between">
+                  <div>
+                    <div class="w-full h-36 bg-slate-100 rounded-xl flex items-center justify-center text-4xl mb-3">🎧</div>
+                    <div class="text-[10px] text-emerald-600 font-bold uppercase">Disponível</div>
+                    <h3 class="font-bold text-slate-900 text-sm">Headphones Bluetooth</h3>
+                  </div>
+                  <div class="mt-3 pt-2 border-t border-slate-100">
+                    <div class="font-extrabold text-slate-900 text-base mb-2">1.800 MT</div>
+                    <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20comprar%20o%20Headphone%20por%201.800%20MT." target="_blank" class="w-full block text-center bg-brand-green hover:bg-brand-greenHover text-white text-xs font-bold py-2 rounded-lg">
+                      Comprar
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between">
+                  <div>
+                    <div class="w-full h-36 bg-slate-100 rounded-xl flex items-center justify-center text-4xl mb-3">👟</div>
+                    <div class="text-[10px] text-emerald-600 font-bold uppercase">Disponível</div>
+                    <h3 class="font-bold text-slate-900 text-sm">Tênis Esportivo</h3>
+                  </div>
+                  <div class="mt-3 pt-2 border-t border-slate-100">
+                    <div class="font-extrabold text-slate-900 text-base mb-2">3.000 MT</div>
+                    <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20comprar%20o%20T%C3%AAnis%20por%203.000%20MT." target="_blank" class="w-full block text-center bg-brand-green hover:bg-brand-greenHover text-white text-xs font-bold py-2 rounded-lg">
+                      Comprar
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between">
+                  <div>
+                    <div class="w-full h-36 bg-slate-100 rounded-xl flex items-center justify-center text-4xl mb-3">🎒</div>
+                    <div class="text-[10px] text-emerald-600 font-bold uppercase">Disponível</div>
+                    <h3 class="font-bold text-slate-900 text-sm">Mochila Urbana</h3>
+                  </div>
+                  <div class="mt-3 pt-2 border-t border-slate-100">
+                    <div class="font-extrabold text-slate-900 text-base mb-2">1.500 MT</div>
+                    <a href="https://wa.me/258877703308?text=Ol%C3%A1!%20Quero%20comprar%20a%20Mochila%20por%201.500%20MT." target="_blank" class="w-full block text-center bg-brand-green hover:bg-brand-greenHover text-white text-xs font-bold py-2 rounded-lg">
+                      Comprar
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        `
+      }
+    };
+
+    function openDemoModal(type) {
+      const template = demoTemplates[type];
+      if (!template) return;
+
+      demoModalTitle.textContent = template.title;
+      demoModalCta.href = template.ctaUrl;
+      demoContentContainer.innerHTML = template.html;
+      
+      demoModal.classList.remove('hidden');
+      demoModal.classList.add('flex');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeDemoModal() {
+      demoModal.classList.add('hidden');
+      demoModal.classList.remove('flex');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    // Close modal on Escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !demoModal.classList.contains('hidden')) {
+        closeDemoModal();
+      }
+    });
+  </script>
+</body>
+</html>

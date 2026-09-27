@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Tooling
+.vscode/
+.idea/
+
+# Antigravity & AI logs
+.gemini/
+.system_generated/
+.agent/
+.agents/
+*.log
