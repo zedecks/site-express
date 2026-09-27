@@ -2,9 +2,9 @@
 
 > **Landing page de alta conversão para o serviço Site Express 48H**, otimizada para captação de clientes via WhatsApp em Moçambique.
 
-🌐 **Domínio de Produção:** [https://siteexpress.edmilsonmuacigarro.com](https://siteexpress.edmilsonmuacigarro.com)  
-👤 **Organização / Mantenedor:** [iradoweck](https://github.com/iradoweck)  
-🎯 **Campanha de Lançamento:** Até 7 dias e 12 horas
+🌐 **Domínio de Produção:** [https://siteexpress.zedecks.com](https://siteexpress.zedecks.com)  
+👤 **Organização / Mantenedor:** [Zedeck's IT (zedecks)](https://github.com/zedecks)  
+🎯 **Campanha de Lançamento:** 7 dias e 12 horas (Oferta 4.000 MT)
 
 ---
 
@@ -91,35 +91,31 @@ npm run watch:js
 
 ## 🌐 Como Publicar no GitHub Pages
 
-Para publicar este projeto sob a conta/organização **`iradoweck`** no domínio **`siteexpress.edmilsonmuacigarro.com`**:
+Para publicar este projeto sob a organização **`zedecks`** no domínio **`siteexpress.zedecks.com`**:
 
-### 1. Criar o Repositório no GitHub
-Crie um repositório chamado `site-express` (ou nome de sua preferência) na conta `iradoweck`.
+### 1. Repositório no GitHub
+O repositório está configurado na organização: `https://github.com/zedecks/site-express`.
 
 ### 2. Inicializar Git e Enviar os Arquivos
 No terminal local, execute:
 ```bash
-git init
-git add .
-git commit -m "feat: initial commit for Site Express 48h landing page"
-git branch -M main
-git remote add origin https://github.com/iradoweck/site-express.git
+git remote set-url origin https://github.com/zedecks/site-express.git
 git push -u origin main
 ```
 
 ### 3. Configurar o GitHub Pages
-1. Acesse o repositório no GitHub: `https://github.com/iradoweck/site-express/settings/pages`.
+1. Acesse o repositório no GitHub: `https://github.com/zedecks/site-express/settings/pages`.
 2. Em **Build and deployment > Source**, selecione **Deploy from a branch**.
 3. Escolha a branch **`main`** e diretório **`/(root)`**, depois clique em **Save**.
-4. Em **Custom domain**, confirme se `siteexpress.edmilsonmuacigarro.com` foi reconhecido através do arquivo [CNAME](file:///d:/ZEDECKLAB/WaysPessoais/landpages/site-express/CNAME).
-5. Ative a opção **Enforce HTTPS** (após a validação do DNS).
+4. Em **Custom domain**, confirme se `siteexpress.zedecks.com` foi reconhecido através do arquivo [CNAME](file:///d:/ZEDECKLAB/WaysPessoais/landpages/site-express/CNAME).
+5. Ative a opção **Enforce HTTPS**.
 
-### 4. Configuração de DNS no seu Provedor de Domínio
-Adicione a seguinte entrada DNS no painel onde o domínio `edmilsonmuacigarro.com` está configurado:
+### 4. Configuração de DNS no Cloudflare (zedecks.com)
+No painel de DNS do domínio `zedecks.com`, adicione ou mantenha o registro:
 
-| Tipo | Nome / Host | Destino / Valor |
-| :--- | :--- | :--- |
-| **CNAME** | `siteexpress` | `iradoweck.github.io` |
+| Tipo | Nome / Host | Destino / Valor | Status do Proxy |
+| :--- | :--- | :--- | :--- |
+| **CNAME** | `siteexpress` | `zedecks.github.io` | Somente DNS ⚪ (ou Com Proxy 🟧 com SSL Full) |
 
 ---
 
