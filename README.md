@@ -96,6 +96,8 @@ site-express/
 
 ---
 
-## 📄 Licença e Direitos
+## 📄 Licença
 
-Desenvolvido por **Edmilson Muaci Garro** ([iradoweck](https://github.com/iradoweck)). Todos os direitos reservados.
+Este projeto é software livre e está licenciado sob os termos da **[GNU General Public License v3.0 (GPL-3.0)](LICENSE)**.
+
+Desenvolvido por **Edmilson Muacigarro** ([iradoweck](https://github.com/iradoweck)).
