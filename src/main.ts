@@ -15,6 +15,41 @@ class App {
     this.setupFaqAccordion();
     this.setupDemoModal();
     this.setupExpiredModal();
+    this.setupScrollReveal();
+  }
+
+  private setupScrollReveal(): void {
+    const revealElements = document.querySelectorAll('.reveal-init');
+    if (!('IntersectionObserver' in window)) {
+      revealElements.forEach(el => el.classList.add('reveal-active'));
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-active');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.08, rootMargin: '0px 0px -20px 0px' }
+    );
+
+    revealElements.forEach((el) => {
+      observer.observe(el);
+    });
+
+    // Check elements already in viewport
+    setTimeout(() => {
+      revealElements.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          el.classList.add('reveal-active');
+        }
+      });
+    }, 100);
   }
 
   private setupMobileMenu(): void {
@@ -70,7 +105,6 @@ class App {
     const demoModalCta = document.getElementById('demo-modal-cta') as HTMLAnchorElement | null;
     const demoContentContainer = document.getElementById('demo-content-container');
 
-    // Expose openDemoModal and closeDemoModal to window
     (window as any).openDemoModal = (type: 'food' | 'business' | 'store') => {
       const template = demoTemplates[type];
       if (!template || !demoModal || !demoModalTitle || !demoModalCta || !demoContentContainer) return;
@@ -112,7 +146,6 @@ class App {
   }
 }
 
-// Instantiate on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
   new App();
 });

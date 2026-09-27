@@ -4,11 +4,11 @@ export class CountdownManager {
   private targetDate: number;
   private timerInterval: number | null = null;
   private popupInterval: number | null = null;
-  private isExpiredPopupDismissed = false;
+  private prevSeconds: number = -1;
 
   // 7 days and 12 hours in milliseconds = 648,000,000 ms (7.5 days)
   private static readonly CAMPAIGN_DURATION_MS = (7 * 24 * 60 * 60 + 12 * 60 * 60) * 1000;
-  private static readonly STORAGE_KEY = 'site_express_campaign_end_time';
+  private static readonly STORAGE_KEY = 'site_express_campaign_end_time_v2';
   private static readonly POPUP_INTERVAL_MS = 2 * 60 * 1000; // 2 minutes
 
   constructor() {
@@ -58,7 +58,18 @@ export class CountdownManager {
     if (daysEl) daysEl.textContent = String(time.days).padStart(2, '0');
     if (hoursEl) hoursEl.textContent = String(time.hours).padStart(2, '0');
     if (minutesEl) minutesEl.textContent = String(time.minutes).padStart(2, '0');
-    if (secondsEl) secondsEl.textContent = String(time.seconds).padStart(2, '0');
+    
+    if (secondsEl) {
+      const secStr = String(time.seconds).padStart(2, '0');
+      if (this.prevSeconds !== time.seconds) {
+        secondsEl.textContent = secStr;
+        secondsEl.classList.remove('countdown-digit');
+        // Trigger reflow to restart CSS animation
+        void secondsEl.offsetWidth;
+        secondsEl.classList.add('countdown-digit');
+        this.prevSeconds = time.seconds;
+      }
+    }
 
     if (time.isExpired) {
       if (this.timerInterval) {
@@ -72,11 +83,11 @@ export class CountdownManager {
   private handleExpiration(): void {
     const banner = document.getElementById('countdown-banner');
     if (banner) {
-      banner.classList.add('bg-rose-900');
+      banner.classList.add('bg-rose-900', 'border-rose-600');
     }
     const label = document.getElementById('countdown-label');
     if (label) {
-      label.textContent = '⚠️ Oferta de Lançamento Expirada';
+      label.innerHTML = '⚠️ Oferta de Lançamento <strong>Expirada</strong>';
     }
 
     this.showExpiredModal();
@@ -97,7 +108,6 @@ export class CountdownManager {
       modal.classList.add('hidden');
       modal.classList.remove('flex');
     }
-    this.isExpiredPopupDismissed = true;
   }
 
   private startRecurringPopup(): void {

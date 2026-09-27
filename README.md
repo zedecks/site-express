@@ -4,13 +4,13 @@
 
 🌐 **Domínio de Produção:** [https://siteexpress.zedecks.com](https://siteexpress.zedecks.com)  
 👤 **Organização / Mantenedor:** [Zedeck's IT (zedecks)](https://github.com/zedecks)  
-🎯 **Campanha de Lançamento:** 7 dias e 12 horas (Oferta 4.000 MT)
+🎯 **Campanha de Lançamento:** 7 dias e 12 horas (Oferta 4 000,00 MZN)
 
 ---
 
 ## 📌 Visão Geral do Projeto
 
-O **Site Express 48H** é uma solução desenvolvida para profissionais, pequenas e médias empresas que necessitam de presença digital rápida, de altíssimo padrão visual e orientada a conversão direta por WhatsApp por 4.000 MT.
+O **Site Express 48H** é uma solução desenvolvida para profissionais, pequenas e médias empresas que necessitam de presença digital rápida, de altíssimo padrão visual e orientada a conversão direta por WhatsApp por 4 000,00 MZN.
 
 ### ✨ Principais Recursos
 - **Design Moderno & Responsivo:** Layout fluido com tipografia Inter & Poppins via Tailwind CSS.

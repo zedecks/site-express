@@ -2,29 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Utilities and Keyframes */
-* {
-  -webkit-tap-highlight-color: transparent;
-}
-
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
-
 ::-webkit-scrollbar-track {
   background: #0F172A;
 }
-
 ::-webkit-scrollbar-thumb {
   background: #2563EB;
   border-radius: 4px;
 }
 
-@keyframes pulse-subtle {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.85; transform: scale(1.03); }
+/* Micro-animations & Motion System */
+* {
+  -webkit-tap-highlight-color: transparent;
 }
 
-.animate-pulse-subtle {
-  animation: pulse-subtle 3s infinite ease-in-out;
+@keyframes float-subtle {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(0.5deg); }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.96); opacity: 0.9; }
+  50% { transform: scale(1.12); opacity: 0.35; }
+  100% { transform: scale(0.96); opacity: 0.9; }
+}
+
+@keyframes countdown-flip {
+  0% { transform: scale(1.15) translateY(-2px); color: #60A5FA; }
+  100% { transform: scale(1) translateY(0); color: inherit; }
+}
+
+@keyframes badge-glow {
+  0%, 100% { box-shadow: 0 0 15px rgba(37, 99, 235, 0.3); }
+  50% { box-shadow: 0 0 25px rgba(37, 99, 235, 0.6); }
+}
+
+.animate-float {
+  animation: float-subtle 4s ease-in-out infinite;
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.countdown-digit {
+  display: inline-block;
+  animation: countdown-flip 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Card & Button Motion Utilities */
+.card-hover-lift {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+}
+
+.card-hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+}
+
+.btn-interactive {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-interactive:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -3px rgba(37, 99, 235, 0.35);
+}
+
+.btn-interactive:active {
+  transform: translateY(0);
+}
+
+/* Reveal on Scroll */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
 }
