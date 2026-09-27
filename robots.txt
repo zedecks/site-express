@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://siteexpress.zedecks.com/sitemap.xml
+
+# AI & LLM Crawlers Directives
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
